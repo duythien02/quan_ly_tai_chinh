@@ -1,0 +1,1 @@
+enum WebContentMode { url, html }

@@ -1,0 +1,55 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        enabled: true
+        options:
+          include_if_null: false
+          explicit_to_json: true
+        generate_for:
+          include:
+            - lib/src/data/models/**.dart
+            - lib/src/core/models/**.dart
+            - lib/src/core/params/**.dart
+      dart_mappable_builder:
+        enabled: true
+        generate_for:
+          include:
+            - lib/src/core/params/**.dart
+        options:
+          renameMethods:
+            fromJson: deserialize
+            toJson: serialize
+            fromMap: fromJson
+            toMap: toJson
+          ignoreNull: true
+      injectable_generator:injectable_builder:
+        enabled: true
+        generate_for:
+          include:
+              - lib/src/data/repositories/**.dart
+              - lib/src/domain/usecases/**.dart
+              - lib/src/presentation/**_bloc.dart
+              - lib/src/core/utils/**_helper.dart
+              - lib/src/core/utils/mappers.dart
+              - lib/src/module/register_module.dart
+              - lib/src/injector/injector.dart
+              - lib/src/data/datasources/local/**.dart
+      hive_generator:
+        enabled: true
+        generate_for:
+          include:
+            - lib/src/data/models/**.dart
+            - lib/src/core/models/**.dart
+            - lib/src/core/params/**.dart
+            - lib/src/domain/entities/**.dart
+      retrofit_generator:retrofit:
+        enabled: true
+        generate_for:
+          include:
+            - lib/src/data/datasources/remote/**.dart
+      auto_route_generator:autoRouteGenerator:
+        enabled: true
+        generate_for:
+          include:
+            - lib/src/core/routes/**.dart

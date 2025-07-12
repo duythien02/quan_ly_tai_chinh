@@ -1,0 +1,1652 @@
+{
+  "@@last_modified": "2021-01-19T14:37:06.889186",
+  "@@locale": "en",
+  "appName": "Kantoku",
+  "@appName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unknown": "An error occurred, please try again later",
+  "@unknown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "connectionErrorPleaseRefresh": "Network connection error, please check your internet connection and try again",
+  "@connectionErrorPleaseRefresh": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accept": "Accept",
+  "@accept": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancelRequest": "Cancel request",
+  "@cancelRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestDuration": "Request duration",
+  "@requestDuration": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "close": "Close",
+  "@close": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "connectionError": "Không có kết nối internet, vui lòng kiểm tra lại",
+  "@connectionError": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onTheNextScreen": "ở màn hình tiếp theo để:",
+  "@onTheNextScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestStoragePermission": "Cho phép truy cập tệp tin",
+  "@requestStoragePermission": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "storageRequest1": "Lưu trữ tệp tải về",
+  "@storageRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeSettingsLater": "Bạn có thể thay đổi quyền này sau ở trong mục Cài đặt của ứng dụng",
+  "@changeSettingsLater": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continuous": "Tiếp tục",
+  "@continuous": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestPermissionLibrary": "Cho phép truy cập thư viện ảnh",
+  "@requestPermissionLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "photoRequest1": "Cập nhật ảnh thông tin cá nhân",
+  "@photoRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestPermissionCamera": "Cho phép truy cập camera",
+  "@requestPermissionCamera": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cameraRequest1": "Chụp hình cập nhật thông tin cá nhân",
+  "@cameraRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cameraRequest2": "Quét mã code dễ dàng",
+  "@cameraRequest2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "microPermissionRequest": "Cho phép ghi âm thiết bị",
+  "@microPermissionRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "microRequest1": "Gọi âm thanh",
+  "@microRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "microRequest2": "Gửi ghi âm hỗ trợ",
+  "@microRequest2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emptyContent": "Chưa có nội dung",
+  "@emptyContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notification": "Alert",
+  "@notification": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "openSettings": "Open settings",
+  "@openSettings": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notNow": "Lúc khác",
+  "@notNow": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "camera": "Máy ảnh",
+  "@camera": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "settingTitle": "Bật quyền truy cập {permission} trong phần cài đặt thiết bị",
+  "@settingTitle": {
+    "placeholders": {
+      "permission": {
+        "type": "String",
+        "example": "camera"
+      }
+    }
+  },
+  "settingMessage": "Ngọc Dung dùng quyền truy cập {permission} để phục vụ cho hoạt động như ",
+  "@settingMessage": {
+    "placeholders": {
+      "permission": {
+        "type": "String",
+        "example": "camera"
+      }
+    }
+  },
+  "photoLibrary": "Thư viện ảnh",
+  "@photoLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "micro": "Micro",
+  "@micro": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "location": "Vị trí",
+  "@location": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "file": "Tệp tin",
+  "@file": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "login": "Login",
+  "@login": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "logout": "Logout",
+  "@logout": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "image": "Hình ảnh",
+  "@image": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "takePicture": "Chụp hình",
+  "@takePicture": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewMore": "Xem thêm",
+  "@viewMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "collapse": "Thu gọn",
+  "@collapse": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadComplete": "Tải xuống hoàn tất",
+  "@downloadComplete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "open": "Mở",
+  "@open": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "getImageInCamera": "Chụp ảnh mới",
+  "@getImageInCamera": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "getImageInGallery": "Chọn ảnh có sẵn",
+  "@getImageInGallery": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hintTextUser": "Enter your ID Login",
+  "@hintTextUser": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hintTextPassword": "Enter your password",
+  "@hintTextPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hintTextOrgCode": "Enter organization code",
+  "@hintTextOrgCode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quickCheckin": "Quick check-in",
+  "@quickCheckin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "today": "Today",
+  "@today": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "forgetPassword": "Forgot Password?",
+  "@forgetPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordRecoveryTitle": "Password Recovery",
+  "@passwordRecoveryTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordRecoveryGuide": "Please enter your user ID or email address. An email containing a recovery link will be sent to your registered email address. Please follow the instructions in the email.",
+  "@passwordRecoveryGuide": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recoveryInputText": "Please enter userID or email",
+  "@recoveryInputText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "submitButton": "Submit",
+  "@submitButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sort": "Sort",
+  "@sort": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceRecord": "Attendance record",
+  "@attendanceRecord": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteList": "Worksite List",
+  "@worksiteList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "currentProject": "Current project",
+  "@currentProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherProject": "Other project",
+  "@otherProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noLog": "No log",
+  "@noLog": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addNote": "Add note",
+  "@addNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "todayLog": "Activity of today",
+  "@todayLog": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "theNextWorkingDay": "The next working day",
+  "@theNextWorkingDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alert": "Alert",
+  "@alert": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectProjectFirst": "Please select project first",
+  "@selectProjectFirst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "project": "Project",
+  "@project": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectMenu": "Project menu",
+  "@projectMenu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "company": "Company",
+  "@company": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterWorkplace": "Enter workplace",
+  "@enterWorkplace": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "submit": "Submit",
+  "@submit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "remote": "remote",
+  "@remote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "officeList": "Office List",
+  "@officeList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectList": "Project List",
+  "@projectList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workLocation": "Work location",
+  "@workLocation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredProjectOrOffice": "Please select office or project first",
+  "@requiredProjectOrOffice": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredCheckin": "Please check-in first",
+  "@requiredCheckin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredCheckout": "Please check-out first",
+  "@requiredCheckout": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredBreakIn": "Please break-in first",
+  "@requiredBreakIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredBreakOut": "Please break-out first",
+  "@requiredBreakOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredLocationService": "Location services are disabled, would you like to enable them?",
+  "@requiredLocationService": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInSuccess": "Check-in success",
+  "@checkInSuccess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "success": "success",
+  "@success": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "gpsIn": "GPS in",
+  "@gpsIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "gpsOut": "GPS out",
+  "@gpsOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fixedHour": "Worked Time",
+  "@fixedHour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "note": "Note",
+  "@note": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "detail": "Detail",
+  "@detail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overtime": "Overtime",
+  "@overtime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workload": "Workload",
+  "@workload": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workloadAllocation": "Workload Allocation",
+  "@workloadAllocation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worktime": "Worktime",
+  "@worktime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInTime": "Check-in Time",
+  "@checkInTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestDailyAttendance": "Send Note",
+  "@requestDailyAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestApproval": "Request Approval",
+  "@requestApproval": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "logHours": "Log Hours",
+  "@logHours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "managerLogHours": "Dashboard",
+  "@managerLogHours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteManager": "Worksite Manager",
+  "@worksiteManager": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "request": "Request",
+  "@request": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "account": "Account",
+  "@account": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectOrg": "Select organization",
+  "@selectOrg": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "date": "Date",
+  "@date": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksite": "Worksite",
+  "@worksite": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayTimeApproval": "Approval",
+  "@dayTimeApproval": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyReport": "Daily Report",
+  "@dailyReport": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteName": "Worksite Name",
+  "@worksiteName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workerName": "Worker Name",
+  "@workerName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workerList": "Worker List",
+  "@workerList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceStatus": "Attendance Status",
+  "@attendanceStatus": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notCheckIn": "Not Check-in",
+  "@notCheckIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkedIn": "Checked-in",
+  "@checkedIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkinGPS": "Check-in GPS",
+  "@checkinGPS": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkoutGPS": "Check-out GPS",
+  "@checkoutGPS": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approvalStatus": "Approval Status",
+  "@approvalStatus": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestStatus": "Request Status",
+  "@requestStatus": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requested": "Requested",
+  "@requested": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRequest": "Not requested",
+  "@noRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestList": "Request List",
+  "@requestList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noPermission": "You don't have permission to access",
+  "@noPermission": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noteList": "Note list",
+  "@noteList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reject": "Reject",
+  "@reject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "rejected": "Rejected",
+  "@rejected": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pending": "Pending",
+  "@pending": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "absent": "Absent",
+  "@absent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "scheduled": "Scheduled",
+  "@scheduled": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "work": "Work",
+  "@work": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "breakTime": "Break Time",
+  "@breakTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "developmentWarning": "This feature is under development",
+  "@developmentWarning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "delete": "Delete",
+  "@delete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "Save",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "back": "Back",
+  "@back": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reset": "Reset",
+  "@reset": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changePassword": "Change password",
+  "@changePassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "currentPass": "Current password",
+  "@currentPass": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "newPassword": "New password",
+  "@newPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmPass": "Confirm password",
+  "@confirmPass": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pleaseEnterAllFields": "Please fill out all fields to proceed",
+  "@pleaseEnterAllFields": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmPassIncorrect": "Password and Confirm Password does not match",
+  "@confirmPassIncorrect": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invalidPassword": "Password is invalid. Password must contain both upper and lowercase letter and include number",
+  "@invalidPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changePasswordSuccess": "Your password was successfully changed",
+  "@changePasswordSuccess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "msgChangePass": "Please update your password",
+  "@msgChangePass": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "offlineModeAlert": "You are in offline mode",
+  "@offlineModeAlert": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "locationNotFound": "Location not found",
+  "@locationNotFound": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quitAccountAlert": "Are you sure you want to quit this account ?",
+  "@quitAccountAlert": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginWithBiometric": "Login with your biometric",
+  "@loginWithBiometric": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "from": "From",
+  "@from": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "to": "To",
+  "@to": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startBreak": "Break-in",
+  "@startBreak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "endBreak": "Break-out",
+  "@endBreak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkin": "Check-in",
+  "@checkin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkout": "Check-out",
+  "@checkout": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendNote": "Send note",
+  "@sendNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "thisWeek": "This week",
+  "@thisWeek": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastWeek": "Last week",
+  "@lastWeek": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "thisMonth": "This month",
+  "@thisMonth": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastMonth": "Last month",
+  "@lastMonth": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "custom": "Custom",
+  "@custom": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "edit": "Edit",
+  "@edit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paid": "Paid",
+  "@paid": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unpaid": "Unpaid",
+  "@unpaid": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOff": "Day Off",
+  "@dayOff": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backToWork": "Back To Work",
+  "@backToWork": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeShift": "changeShift",
+  "@changeShift": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "metricTitle": "Monthly Attendance Metrics",
+  "@metricTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalWorkingDays": "Working Days",
+  "@totalWorkingDays": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalWorkingHours": "Working Hours",
+  "@totalWorkingHours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalOvertime": "Overtime",
+  "@totalOvertime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalPaidDayOff": "Paid Day Off",
+  "@totalPaidDayOff": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalUnpaidDayOff": "Unpaid Day Off",
+  "@totalUnpaidDayOff": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createDate": "Create Date",
+  "@createDate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createdUser": "Created User",
+  "@createdUser": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestType": "Request Type",
+  "@requestType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quantity": "Quantity",
+  "@quantity": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unit": "Unit",
+  "@unit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "content": "Content",
+  "@content": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "status": "Status",
+  "@status": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "action": "Action",
+  "@action": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "days": "Days",
+  "@days": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hours": "Hours",
+  "@hours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "minutes": "Minutes",
+  "@minutes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "newTicket": "New Ticket",
+  "@newTicket": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recordTitle": "Request History",
+  "@recordTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceRequest": "Attendance",
+  "@attendanceRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOffRequest": "Day Off",
+  "@dayOffRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOffType": "Day Off Type",
+  "@dayOffType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approver": "Approver",
+  "@approver": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "halfDay": "Half a Day",
+  "@halfDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "create": "Create",
+  "@create": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "view": "View",
+  "@view": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approve": "Approve",
+  "@approve": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approved": "Approved",
+  "@approved": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onProgess": "On Progress",
+  "@onProgess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOffDetailTitle": "Day Off Detail Title",
+  "@dayOffDetailTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRequestData": "No Request Data",
+  "@noRequestData": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "missingField": "Missing required fields",
+  "@missingField": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dateConstraintErr": "Start Date cannot overlap End Date",
+  "@dateConstraintErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "okButton": "OK",
+  "@okButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "updateTicket": "Update Request",
+  "@updateTicket": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "Language",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmLogOut": "Are you sure to log out？",
+  "@confirmLogOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterAll": "All",
+  "@filterAll": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterProcessed": "Processed",
+  "@filterProcessed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterProcessing": "Processing",
+  "@filterProcessing": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterCancelled": "Cancelled",
+  "@filterCancelled": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "warning": "Are you sure ?",
+  "@warning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "breakInMustBeBeforeBreakOut": "Break-in time must be before break-out time",
+  "@breakInMustBeBeforeBreakOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInMustBeforeCheckOut": "Check-in time must be before check-out time",
+  "@checkInMustBeforeCheckOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInTimeHasBeenAdjusted": "Check-in time has been adjusted to 24 hours before check-out time due to exceeding 24 hours",
+  "@checkInTimeHasBeenAdjusted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkOutTimeHasBeenAdjusted": "Check-out time has been adjusted to 24 hours after check-in time due to exceeding 24 hours",
+  "@checkOutTimeHasBeenAdjusted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reasonInput": "Please inform reason to accept/reject",
+  "@reasonInput": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "none": "none",
+  "@none": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "monthlyAttendance": "Attendance",
+  "@monthlyAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "month": "Month",
+  "@month": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "week": "Week",
+  "@week": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "doubleWeeks": "2 Weeks",
+  "@doubleWeeks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceTitle": "Monthly Attendance",
+  "@attendanceTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "summaryRequestWarning": "You have not submit for attendance this month!",
+  "@summaryRequestWarning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "holidayNoti": "Today is holiday。",
+  "@holidayNoti": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "rejectReason": "Reject reason",
+  "@rejectReason": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "companyRequestReason": "Company Work",
+  "@companyRequestReason": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "personalRequestReason": "Personal Work",
+  "@personalRequestReason": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "original": "Original",
+  "@original": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "next": "Next",
+  "@next": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dataNumber": "Data number",
+  "@dataNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manager": "Manager",
+  "@manager": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invoiceTitle": "Invoice Title",
+  "@invoiceTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "issueDate": "Issue Date",
+  "@issueDate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "issuer": "Issuer",
+  "@issuer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "documentNumber": "Document Number",
+  "@documentNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paymentMethod": "Payment Method",
+  "@paymentMethod": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paymentDeadline": "Payment Deadline",
+  "@paymentDeadline": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectValue": "Select value",
+  "@selectValue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "no": "No",
+  "@no": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "category": "Category",
+  "@category": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "item": "Item",
+  "@item": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "provider": "Provider",
+  "@provider": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "payment": "Payment",
+  "@payment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "price": "Price",
+  "@price": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "taxRate": "Tax rate",
+  "@taxRate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "priceBeforeTax": "Price before tax",
+  "@priceBeforeTax": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "priceAfterTax": "Price after tax",
+  "@priceAfterTax": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectName": "Project Name",
+  "@projectName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "code": "Code",
+  "@code": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteAttendance": "Worksite attendance",
+  "@worksiteAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "presigned": "Presigned",
+  "@presigned": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cost": "Cost",
+  "@cost": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendance": "Attendance",
+  "@attendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noApproval": "No approval",
+  "@noApproval": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "leaveType": "Leave Type",
+  "@leaveType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workingLocation": "Working Location",
+  "@workingLocation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "editShift": "Edit Shift",
+  "@editShift": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addNewShift": "Add New Shift",
+  "@addNewShift": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workContent": "Work Content Report",
+  "@workContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workContentHintText": "Input work content...",
+  "@workContentHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manDay": "Man Day",
+  "@manDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manHour": "Man Hour",
+  "@manHour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ranking": "Ranking",
+  "@ranking": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mainConstruction": "Main Construction",
+  "@mainConstruction": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "subConstruction": "Sub Construction",
+  "@subConstruction": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overall": "Overall",
+  "@overall": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectWorksite": "Select worksite",
+  "@selectWorksite": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createAttendance": "Create Attendance",
+  "@createAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "expireTime": "Hết hạn",
+  "@expireTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invitationList": "Danh sách lời mời",
+  "@invitationList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noData": "Data is empty",
+  "@noData": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectProject": "Select project",
+  "@selectProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Search",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emailLabel": "Email *",
+  "@emailLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredEmail": "Email is required",
+  "@requiredEmail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invalidEmail": "Enter a valid email",
+  "@invalidEmail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginIdLabel": "Login ID *",
+  "@loginIdLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredLoginId": "Login ID is required",
+  "@requiredLoginId": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordLabel": "Password *",
+  "@passwordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredPassword": "Password is required",
+  "@requiredPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmPasswordLabel": "Confirm Password *",
+  "@confirmPasswordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredConfirmPassword": "Confirm Password is required",
+  "@requiredConfirmPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordMismatch": "Passwords do not match",
+  "@passwordMismatch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "name": "Name *",
+  "@name": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredName": "Name is required",
+  "@requiredName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "address": "Address",
+  "@address": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "phone": "Phone",
+  "@phone": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "gender": "Gender",
+  "@gender": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "male": "Male",
+  "@male": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "female": "Female",
+  "@female": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "other": "Other",
+  "@other": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectBirthday": "Select Birthday",
+  "@selectBirthday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "birthday": "Birthday",
+  "@birthday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterOtp": "Enter OTP *",
+  "@enterOtp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "resendOtpAfterOneMinute": "Please resend OTP after 1 minute.",
+  "@resendOtpAfterOneMinute": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendOtp": "SEND OTP",
+  "@sendOtp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpSentToEmail": "OTP has been sent to your email",
+  "@otpSentToEmail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "register": "Register",
+  "@register": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "registerSuccess": "Register successfully!",
+  "@registerSuccess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "access": "Access",
+  "@access": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "availableApprover": "Available Approver",
+  "@availableApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "officeApprover": "Office Approver",
+  "@officeApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteApprover": "Worksite Approver",
+  "@worksiteApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alternativeApprover": "Alternative Approver",
+  "@alternativeApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workOnDayOffRequest": "Work on dayoff request",
+  "@workOnDayOffRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workOnDayOffRequestDescription": "Use this request to work on dayoff",
+  "@workOnDayOffRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lateOrEarlyRequest": "Late or early request",
+  "@lateOrEarlyRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lateOrEarlyRequestDescription": "Use this request to be late or early",
+  "@lateOrEarlyRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overtimeRequest": "Overtime request",
+  "@overtimeRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overtimeRequestDescription": "Use this request to work overtime",
+  "@overtimeRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "leaveRequest": "Leave request",
+  "@leaveRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "leaveRequestDescription": "Use this request to take leave",
+  "@leaveRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationType": "Request duration selection",
+  "@durationType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationTypeAllDay": "All Day",
+  "@durationTypeAllDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationTypeHalfDay": "Half Day",
+  "@durationTypeHalfDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationTypeCustomize": "Customize",
+  "@durationTypeCustomize": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "period": "Period",
+  "@period": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "morning": "Morning",
+  "@morning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "afternoon": "Afternoon",
+  "@afternoon": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestDescription": "Request Description",
+  "@requestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "event": "Event",
+  "@event": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewMethod": "View Method",
+  "@viewMethod": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewAllProjects": "View All Projects",
+  "@viewAllProjects": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewEachProject": "View Each Project",
+  "@viewEachProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterTime": "Enter Time",
+  "@enterTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectTime": "Select Time",
+  "@selectTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchToDragMode": "Switch to Drag Mode",
+  "@switchToDragMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchToWheelMode": "Switch to Wheel Mode",
+  "@switchToWheelMode": {
+    "type": "text",
+    "placeholders": {}
+  },  
+  "switchToInputMode": "Switch to Input Mode",  
+  "@switchToInputMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paidLeave": "Paid Leave",
+  "@paidLeave": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unpaidLeave": "Unpaid Leave",
+  "@unpaidLeave": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "compensatoryLeave": "Compensatory Leave",
+  "@compensatoryLeave": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherLeave": "Other Leave",
+  "@otherLeave": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

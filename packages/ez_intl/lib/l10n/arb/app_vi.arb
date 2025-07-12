@@ -1,0 +1,1652 @@
+{
+  "@@last_modified": "2021-01-19T14:37:06.889186",
+  "@@locale": "vi",
+  "appName": "Kantoku",
+  "@appName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unknown": "An error occurred, please try again later",
+  "@unknown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "connectionErrorPleaseRefresh": "Network connection error, please check your internet connection and try again",
+  "@connectionErrorPleaseRefresh": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accept": "Accept",
+  "@accept": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancelRequest": "Hủy yêu cầu",
+  "@cancelRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestDuration": "Thời gian yêu cầu",
+  "@requestDuration": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "close": "Close",
+  "@close": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "connectionError": "Không có kết nối internet, vui lòng kiểm tra lại",
+  "@connectionError": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onTheNextScreen": "ở màn hình tiếp theo để:",
+  "@onTheNextScreen": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestStoragePermission": "Cho phép truy cập tệp tin",
+  "@requestStoragePermission": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "storageRequest1": "Lưu trữ tệp tải về",
+  "@storageRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeSettingsLater": "Bạn có thể thay đổi quyền này sau ở trong mục Cài đặt của ứng dụng",
+  "@changeSettingsLater": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "continuous": "Tiếp tục",
+  "@continuous": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestPermissionLibrary": "Cho phép truy cập thư viện ảnh",
+  "@requestPermissionLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "photoRequest1": "Cập nhật ảnh thông tin cá nhân",
+  "@photoRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestPermissionCamera": "Cho phép truy cập camera",
+  "@requestPermissionCamera": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cameraRequest1": "Chụp hình cập nhật thông tin cá nhân",
+  "@cameraRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cameraRequest2": "Quét mã code dễ dàng",
+  "@cameraRequest2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "microPermissionRequest": "Cho phép ghi âm thiết bị",
+  "@microPermissionRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "microRequest1": "Gọi âm thanh",
+  "@microRequest1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "microRequest2": "Gửi ghi âm hỗ trợ",
+  "@microRequest2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emptyContent": "Chưa có nội dung",
+  "@emptyContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notification": "Alert",
+  "@notification": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "openSettings": "Open settings",
+  "@openSettings": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notNow": "Lúc khác",
+  "@notNow": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "camera": "Máy ảnh",
+  "@camera": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "settingTitle": "Bật quyền truy cập {permission} trong phần cài đặt thiết bị",
+  "@settingTitle": {
+    "placeholders": {
+      "permission": {
+        "type": "String",
+        "example": "camera"
+      }
+    }
+  },
+  "settingMessage": "Ngọc Dung dùng quyền truy cập {permission} để phục vụ cho hoạt động như ",
+  "@settingMessage": {
+    "placeholders": {
+      "permission": {
+        "type": "String",
+        "example": "camera"
+      }
+    }
+  },
+  "photoLibrary": "Thư viện ảnh",
+  "@photoLibrary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "micro": "Micro",
+  "@micro": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "location": "Vị trí",
+  "@location": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "file": "Tệp tin",
+  "@file": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "login": "Login",
+  "@login": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "logout": "Đăng xuất",
+  "@logout": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "image": "Hình ảnh",
+  "@image": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "takePicture": "Chụp hình",
+  "@takePicture": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewMore": "Xem thêm",
+  "@viewMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "collapse": "Thu gọn",
+  "@collapse": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "downloadComplete": "Tải xuống hoàn tất",
+  "@downloadComplete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "open": "Mở",
+  "@open": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "getImageInCamera": "Chụp ảnh mới",
+  "@getImageInCamera": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "getImageInGallery": "Chọn ảnh có sẵn",
+  "@getImageInGallery": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hintTextUser": "Enter your ID Login",
+  "@hintTextUser": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hintTextPassword": "Enter your password",
+  "@hintTextPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hintTextOrgCode": "Enter organization code",
+  "@hintTextOrgCode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quickCheckin": "Check-in 1 chạm",
+  "@quickCheckin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "today": "Today",
+  "@today": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "forgetPassword": "Forget Your Password?",
+  "@forgetPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sort": "Sort",
+  "@sort": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceRecord": "Attendance record",
+  "@attendanceRecord": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteList": "Worksite List",
+  "@worksiteList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "officeList": "Office List",
+  "@officeList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workLocation": "Work location",
+  "@workLocation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "currentProject": "Current project",
+  "@currentProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherProject": "Other project",
+  "@otherProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noLog": "情報なし",
+  "@noLog": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addNote": "Thêm ghi chú",
+  "@addNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "todayLog": "Hoạt động trong ngày",
+  "@todayLog": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "theNextWorkingDay": "Ngày làm việc tiếp theo",
+  "@theNextWorkingDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alert": "Thông báo",
+  "@alert": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectProjectFirst": "Xin hãy lựa chọn dự án trước!",
+  "@selectProjectFirst": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "project": "Dự án",
+  "@project": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectMenu": "Danh sách dự án",
+  "@projectMenu": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "company": "Company",
+  "@company": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterWorkplace": "Nhập nơi làm việc",
+  "@enterWorkplace": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "submit": "Gui",
+  "@submit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "remote": "remote",
+  "@remote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredProjectOrOffice": "Please select office or project first",
+  "@requiredProjectOrOffice": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredCheckin": "Please check-in first",
+  "@requiredCheckin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredCheckout": "Please check-out first",
+  "@requiredCheckout": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredBreakIn": "Please break-in first",
+  "@requiredBreakIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredBreakOut": "Please break-out first",
+  "@requiredBreakOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredLocationService": "Location services are disabled, would you like to enable them?",
+  "@requiredLocationService": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInSuccess": "Check-in success",
+  "@checkInSuccess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "success": "success",
+  "@success": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "gpsIn": "GPS in",
+  "@gpsIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "gpsOut": "GPS out",
+  "@gpsOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "fixedHour": "Fixed Hour",
+  "@fixedHour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "note": "Note",
+  "@note": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "detail": "Chi tiết",
+  "@detail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overtime": "Overtime",
+  "@overtime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workload": "Công số",
+  "@workload": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workloadAllocation": "Phân chia công số",
+  "@workloadAllocation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worktime": "Worktime",
+  "@worktime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInTime": "Check-in Time",
+  "@checkInTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestDailyAttendance": "Send Note",
+  "@requestDailyAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestApproval": "Request Approval",
+  "@requestApproval": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "logHours": "Log Hours",
+  "@logHours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "managerLogHours": "Dashboard",
+  "@managerLogHours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteManager": "Worksite Manager",
+  "@worksiteManager": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "request": "Request",
+  "@request": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "account": "Account",
+  "@account": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectOrg": "Select organization",
+  "@selectOrg": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "date": "Date",
+  "@date": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksite": "Worksite",
+  "@worksite": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayTimeApproval": "Approval",
+  "@dayTimeApproval": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyReport": "Báo cáo ngày",
+  "@dailyReport": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteName": "Worksite Name",
+  "@worksiteName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workerName": "Worker Name",
+  "@workerName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workerList": "Danh sách nhân viên",
+  "@workerList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceStatus": "Attendance Status",
+  "@attendanceStatus": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notCheckIn": "Chưa Check-in",
+  "@notCheckIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkedIn": "Đã Check-in",
+  "@checkedIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkinGPS": "Check-in GPS",
+  "@checkinGPS": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approvalStatus": "Approval Status",
+  "@approvalStatus": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestStatus": "Request Status",
+  "@requestStatus": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRequest": "Not requested",
+  "@noRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestList": "Request List",
+  "@requestList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkoutGPS": "Check-out GPS",
+  "@checkoutGPS": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceRequest": "Attendance Request",
+  "@attendanceRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noPermission": "Bạn không có quyền truy cập",
+  "@noPermission": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noteList": "Danh sách ghi chú",
+  "@noteList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reject": "Từ chối",
+  "@reject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "rejected": "Đã từ chối",
+  "@rejected": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pending": "Đang chờ",
+  "@pending": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "absent": "Vắng mặt",
+  "@absent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "scheduled": "Đã đăng ký",
+  "@scheduled": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "work": "Làm việc",
+  "@work": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "breakTime": "Thời gian nghỉ",
+  "@breakTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requested": "Đã gửi yêu cầu",
+  "@requested": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "developmentWarning": "Chức năng này đang phát triển",
+  "@developmentWarning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "delete": "Xóa",
+  "@delete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "Lưu",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "back": "Quay lại",
+  "@back": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reset": "Khôi phục",
+  "@reset": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changePassword": "Change password",
+  "@changePassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "currentPass": "Current password",
+  "@currentPass": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "newPassword": "New password",
+  "@newPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmPass": "Confirm password",
+  "@confirmPass": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "pleaseEnterAllFields": "Please fill out all fields to proceed",
+  "@pleaseEnterAllFields": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmPassIncorrect": "Password and Confirm Password does not match",
+  "@confirmPassIncorrect": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invalidPassword": "Password is invalid. Password must contain both upper and lowercase letter and include number",
+  "@invalidPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changePasswordSuccess": "Your password was successfully changed",
+  "@changePasswordSuccess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "msgChangePass": "Please update your password",
+  "@msgChangePass": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "offlineModeAlert": "You are in offline mode",
+  "@offlineModeAlert": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "locationNotFound": "Location not found",
+  "@locationNotFound": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quitAccountAlert": "Are you sure you want to quit this account ?",
+  "@quitAccountAlert": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginWithBiometric": "Login with your biometric",
+  "@loginWithBiometric": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "from": "From",
+  "@from": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "to": "To",
+  "@to": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "startBreak": "Break-in",
+  "@startBreak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "endBreak": "Break-out",
+  "@endBreak": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkin": "Check-in",
+  "@checkin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkout": "Check-out",
+  "@checkout": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendNote": "Send note",
+  "@sendNote": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "thisWeek": "This week",
+  "@thisWeek": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastWeek": "Last week",
+  "@lastWeek": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "thisMonth": "This month",
+  "@thisMonth": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastMonth": "Last month",
+  "@lastMonth": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "custom": "Custom",
+  "@custom": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "edit": "Edit",
+  "@edit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "rejectReason": "Lý do từ chối",
+  "@rejectReason": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "companyRequestReason": "Công việc công ty",
+  "@companyRequestReason": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "personalRequestReason": "Công việc cá nhân",
+  "@personalRequestReason": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "original": "Ban đầu",
+  "@original": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "next": "Kế tiếp",
+  "@next": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noData": "Không có dữ liệu",
+  "@noData": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectProject": "Chọn dự án",
+  "@selectProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Tìm kiếm",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dataNumber": "Số dữ liệu",
+  "@dataNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manager": "Người quản lý",
+  "@manager": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invoiceTitle": "Tiêu đề hóa đơn",
+  "@invoiceTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "issueDate": "Ngày phát hành",
+  "@issueDate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "issuer": "Người phát hành",
+  "@issuer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "documentNumber": "Số tài liệu",
+  "@documentNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paymentMethod": "Phương thức thanh toán",
+  "@paymentMethod": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paymentDeadline": "Hạn thanh toán",
+  "@paymentDeadline": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectValue": "Chọn giá trị",
+  "@selectValue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "no": "STT",
+  "@no": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "category": "Danh mục",
+  "@category": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "item": "Mục",
+  "@item": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "provider": "Nhà cung cấp",
+  "@provider": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "payment": "Thanh toán",
+  "@payment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "price": "Giá",
+  "@price": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "taxRate": "Thuế suất",
+  "@taxRate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "priceBeforeTax": "Giá trước thuế",
+  "@priceBeforeTax": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "priceAfterTax": "Giá sau thuế",
+  "@priceAfterTax": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectName": "Tên dự án",
+  "@projectName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "code": "Mã",
+  "@code": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteAttendance": "Chấm công tại công trường",
+  "@worksiteAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "presigned": "Ký trước",
+  "@presigned": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cost": "Chi phí",
+  "@cost": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendance": "Chấm công",
+  "@attendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overall": "Tổng thể",
+  "@overall": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noApproval": "Chưa phê duyệt",
+  "@noApproval": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "leaveType": "Loại nghỉ phép",
+  "@leaveType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workingLocation": "Vị trí làm việc",
+  "@workingLocation": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "editShift": "Chỉnh sửa ca làm",
+  "@editShift": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "addNewShift": "Thêm ca làm",
+  "@addNewShift": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workContent": "Nội dung công việc",
+  "@workContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workContentHintText": "Nhập nội dung công việc...",
+  "@workContentHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manDay": "Ngày công",
+  "@manDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "manHour": "Giờ công",
+  "@manHour": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ranking": "Bậc thợ",
+  "@ranking": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mainConstruction": "Công trình chính",
+  "@mainConstruction": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "subConstruction": "Công trình phụ",
+  "@subConstruction": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectWorksite": "Chọn công trường",
+  "@selectWorksite": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createAttendance": "Tạo chấm công",
+  "@createAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "expireTime": "Hết hạn",
+  "@expireTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invitationList": "Danh sách lời mời",
+  "@invitationList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "emailLabel": "Email *",
+  "@emailLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredEmail": "Email là bắt buộc",
+  "@requiredEmail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+  "@invalidEmail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginIdLabel": "ID đăng nhập *",
+  "@loginIdLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredLoginId": "ID đăng nhập là bắt buộc",
+  "@requiredLoginId": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordLabel": "Mật khẩu *",
+  "@passwordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredPassword": "Mật khẩu là bắt buộc",
+  "@requiredPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmPasswordLabel": "Xác nhận mật khẩu *",
+  "@confirmPasswordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredConfirmPassword": "Xác nhận mật khẩu là bắt buộc",
+  "@requiredConfirmPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordMismatch": "Mật khẩu không khớp",
+  "@passwordMismatch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "name": "Tên *",
+  "@name": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requiredName": "Tên là bắt buộc",
+  "@requiredName": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "address": "Địa chỉ",
+  "@address": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "phone": "Số điện thoại",
+  "@phone": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "gender": "Giới tính",
+  "@gender": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "male": "Nam",
+  "@male": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "female": "Nữ",
+  "@female": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "other": "Khác",
+  "@other": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectBirthday": "Chọn ngày sinh",
+  "@selectBirthday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "birthday": "Ngày sinh",
+  "@birthday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterOtp": "Nhập OTP *",
+  "@enterOtp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "resendOtpAfterOneMinute": "Vui lòng gửi lại OTP sau 1 phút.",
+  "@resendOtpAfterOneMinute": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sendOtp": "Gửi OTP",
+  "@sendOtp": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otpSentToEmail": "OTP đã được gửi đến email của bạn",
+  "@otpSentToEmail": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "register": "Đăng ký",
+  "@register": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "registerSuccess": "Đăng ký thành công!",
+  "@registerSuccess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcome": "Xin chào",
+  "@welcome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "access": "Truy cập",
+  "@access": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordRecoveryTitle": "",
+  "@passwordRecoveryTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "passwordRecoveryGuide": "",
+  "@passwordRecoveryGuide": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recoveryInputText": "",
+  "@recoveryInputText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "submitButton": "",
+  "@submitButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "projectList": "",
+  "@projectList": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paid": "",
+  "@paid": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unpaid": "",
+  "@unpaid": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOff": "",
+  "@dayOff": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backToWork": "",
+  "@backToWork": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeShift": "",
+  "@changeShift": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "metricTitle": "",
+  "@metricTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalWorkingDays": "",
+  "@totalWorkingDays": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalWorkingHours": "",
+  "@totalWorkingHours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalOvertime": "",
+  "@totalOvertime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalPaidDayOff": "",
+  "@totalPaidDayOff": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "totalUnpaidDayOff": "",
+  "@totalUnpaidDayOff": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createDate": "",
+  "@createDate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createdUser": "",
+  "@createdUser": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestType": "",
+  "@requestType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "quantity": "",
+  "@quantity": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unit": "",
+  "@unit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "content": "",
+  "@content": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "status": "",
+  "@status": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "action": "",
+  "@action": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "days": "",
+  "@days": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hours": "",
+  "@hours": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "minutes": "",
+  "@minutes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "newTicket": "",
+  "@newTicket": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "recordTitle": "",
+  "@recordTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOffRequest": "",
+  "@dayOffRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOffType": "",
+  "@dayOffType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approver": "",
+  "@approver": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "halfDay": "",
+  "@halfDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "create": "",
+  "@create": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "view": "",
+  "@view": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approve": "",
+  "@approve": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "approved": "",
+  "@approved": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onProgess": "",
+  "@onProgess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayOffDetailTitle": "",
+  "@dayOffDetailTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "noRequestData": "",
+  "@noRequestData": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "missingField": "",
+  "@missingField": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dateConstraintErr": "",
+  "@dateConstraintErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "okButton": "OK",
+  "@okButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "cancelButton": "Hủy bỏ",
+  "@cancelButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "updateTicket": "",
+  "@updateTicket": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "",
+  "@language": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmLogOut": "",
+  "@confirmLogOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterAll": "",
+  "@filterAll": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterProcessed": "",
+  "@filterProcessed": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterProcessing": "",
+  "@filterProcessing": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "filterCancelled": "",
+  "@filterCancelled": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "warning": "",
+  "@warning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "breakInMustBeBeforeBreakOut": "",
+  "@breakInMustBeBeforeBreakOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInMustBeforeCheckOut": "",
+  "@checkInMustBeforeCheckOut": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkInTimeHasBeenAdjusted": "",
+  "@checkInTimeHasBeenAdjusted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "checkOutTimeHasBeenAdjusted": "",
+  "@checkOutTimeHasBeenAdjusted": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "reasonInput": "",
+  "@reasonInput": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "none": "",
+  "@none": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "monthlyAttendance": "",
+  "@monthlyAttendance": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "month": "",
+  "@month": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "week": "",
+  "@week": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "doubleWeeks": "",
+  "@doubleWeeks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "attendanceTitle": "",
+  "@attendanceTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "summaryRequestWarning": "",
+  "@summaryRequestWarning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "holidayNoti": "",
+  "@holidayNoti": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "availableApprover": "Người phê duyệt",
+  "@availableApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "officeApprover": "Người phê duyệt văn phòng",
+  "@officeApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "worksiteApprover": "Người phê duyệt công trường",
+  "@worksiteApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "alternativeApprover": "Người phê duyệt thay thế",
+  "@alternativeApprover": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workOnDayOffRequest": "Làm việc trong ngày nghỉ",
+  "@workOnDayOffRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "workOnDayOffRequestDescription": "Sử dụng khi cần làm việc trong ngày nghỉ",
+  "@workOnDayOffRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lateOrEarlyRequest": "Đi muộn/Về sớm",
+  "@lateOrEarlyRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lateOrEarlyRequestDescription": "Sử dụng khi cần đi muộn/Về sớm",
+  "@lateOrEarlyRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overtimeRequest": "Làm thêm giờ",
+  "@overtimeRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "overtimeRequestDescription": "Sử dụng khi cần làm thêm giờ",
+  "@overtimeRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "leaveRequest": "Nghỉ phép",
+  "@leaveRequest": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "leaveRequestDescription": "Sử dụng khi cần nghỉ phép",
+  "@leaveRequestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationType": "Lựa chọn thời gian",
+  "@durationType": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationTypeAllDay": "Cả ngày",
+  "@durationTypeAllDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationTypeHalfDay": "Nửa ngày",
+  "@durationTypeHalfDay": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "durationTypeCustomize": "Tùy chỉnh",
+  "@durationTypeCustomize": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "period": "Khoảng thời gian",
+  "@period": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "morning": "Buổi sáng",
+  "@morning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "afternoon": "Buổi chiều",
+  "@afternoon": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "requestDescription": "Ghi chú",
+  "@requestDescription": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "event": "Sự kiện",
+  "@event": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewMethod": "Phương thức xem",
+  "@viewMethod": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewAllProjects": "Xem tất cả dự án",
+  "@viewAllProjects": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "viewEachProject": "Xem từng dự án",
+  "@viewEachProject": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterTime": "Nhập thời gian",
+  "@enterTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "selectTime": "Chọn thời gian",
+  "@selectTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchToDragMode": "Chuyển sang chế độ kéo",
+  "@switchToDragMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchToWheelMode": "Chuyển sang chế độ quay",
+  "@switchToWheelMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchToInputMode": "Chuyển sang chế độ nhập",
+  "@switchToInputMode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "paidLeave": "Nghỉ phép có hưởng lương",
+  "@paidLeave": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "unpaidLeave": "Nghỉ phép không hưởng lương",
+  "@unpaidLeave": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "compensatoryLeave": "Nghỉ phép bù",
+  "@compensatoryLeave": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherLeave": "Nghỉ phép khác",
+  "@otherLeave": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
