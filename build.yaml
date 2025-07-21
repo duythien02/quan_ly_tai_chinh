@@ -27,14 +27,14 @@ targets:
         enabled: true
         generate_for:
           include:
-              - lib/src/data/repositories/**.dart
-              - lib/src/domain/usecases/**.dart
-              - lib/src/presentation/**_bloc.dart
-              - lib/src/core/utils/**_helper.dart
-              - lib/src/core/utils/mappers.dart
-              - lib/src/module/register_module.dart
-              - lib/src/injector/injector.dart
-              - lib/src/data/datasources/local/**.dart
+            - lib/src/data/repositories/**.dart
+            - lib/src/domain/usecases/**.dart
+            - lib/src/presentation/**_bloc.dart
+            - lib/src/core/utils/**_helper.dart
+            - lib/src/core/utils/mappers.dart
+            - lib/src/module/register_module.dart
+            - lib/src/injector/injector.dart
+            - lib/src/data/datasources/local/**.dart
       hive_generator:
         enabled: true
         generate_for:

@@ -19,6 +19,7 @@ import 'src/core/network/ez_network.dart';
 import 'src/core/routes/app_router.dart';
 import 'src/core/utils/app_media_query.dart';
 import 'src/core/utils/status_bar_color.dart';
+import 'src/data/datasources/local/cache/hive/ez_cache.dart';
 import 'src/injector/injector.dart';
 import 'src/presentation/_blocs/app_multi_bloc_provider.dart';
 import 'src/presentation/_blocs/authentication/token_authentication_bloc.dart';
@@ -76,7 +77,13 @@ class _MainState extends State<Main> {
                 getIt<AppRouter>().replaceAll([const AuthRoute()]);
               }
               if (state is TokenAuthenticationAuthenticated) {
-                getIt<AppRouter>().replaceAll([const HomeRoute()]);
+                final hasAccount =
+                    await getIt<EZCache>().userDao.getSavedHasAccount();
+                if (hasAccount ?? false) {
+                  getIt<AppRouter>().replaceAll([const HomeRoute()]);
+                } else {
+                  getIt<AppRouter>().replaceAll([const InitAccountRoute()]);
+                }
               }
             },
             child: Container(),
@@ -94,7 +101,6 @@ class App extends StatelessWidget {
   @override
   Widget build(final BuildContext context) {
     final appRouter = getIt<AppRouter>();
-    print('App build');
     return ScreenUtilInit(
       minTextAdapt: true,
       designSize: const Size(375, 812),

@@ -46,6 +46,21 @@ class HelperRepositoryImpl implements HelperRepository {
   }
 
   @override
+  Future<String> get refreshToken {
+    return _cache.refreshToken;
+  }
+
+  @override
+  Future<void> saveRefreshToken(final String? token) {
+    return _cache.saveRefreshToken(token);
+  }
+
+  @override
+  Future<void> removeRefreshToken() {
+    return _cache.removeRefreshToken();
+  }
+
+  @override
   Future<String> get firebaseToken => _cache.firebaseToken;
 
   @override

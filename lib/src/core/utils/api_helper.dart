@@ -14,9 +14,8 @@ import '../app_strings.dart';
 Future<Map<String, dynamic>> getHeaders() async {
   final getAccessTokenUseCase = getIt<AccessTokenGetUseCase>();
   final deviceInfo = await getDeviceInfo();
-  final token =
-      (await getIt<EZCache>().get<String?>(Keys.accessTokenWithOrg)) ??
-          await getAccessTokenUseCase();
+  final token = (await getIt<EZCache>().get<String?>(Keys.accessToken)) ??
+      await getAccessTokenUseCase();
   final language = await getIt<GetLanguageOptionUseCase>()();
   return <String, dynamic>{
     Keys.authorization: token.isNotEmpty ? 'Bearer $token' : '',

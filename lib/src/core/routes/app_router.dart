@@ -8,6 +8,7 @@ import 'package:auto_route/auto_route.dart';
 
 // Project imports:
 import '../../presentation/auth/auth_page.dart';
+import '../../presentation/auth/init_account_page.dart';
 import '../../presentation/home_page/home_page.dart';
 import '../../presentation/landing_page/landing_page.dart';
 import '../widgets/unknown_route_page.dart';
@@ -28,6 +29,10 @@ part 'app_router.gr.dart';
     AutoRoute<void>(
       page: AuthPage,
       path: Routes.auth,
+    ),
+    AutoRoute<void>(
+      page: InitAccountPage,
+      path: Routes.initAccount,
     ),
     AutoRoute<void>(
       page: HomePage,

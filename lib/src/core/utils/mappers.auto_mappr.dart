@@ -9,12 +9,20 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_mappr_annotation/auto_mappr_annotation.dart' as _i1;
 
-import '../../data/models/auth/register_model.dart' as _i2;
-import '../../domain/entities/register.dart' as _i3;
+import '../../data/models/account/account_model.dart' as _i4;
+import '../../data/models/account/currency_model.dart' as _i6;
+import '../../data/models/auth/user_model.dart' as _i2;
+import '../../domain/entities/account.dart' as _i5;
+import '../../domain/entities/currency.dart' as _i7;
+import '../../domain/entities/user.dart' as _i3;
 
 /// {@template package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
 /// Available mappings:
-/// - `RegisterModel` → `Register`.
+/// - `UserModel` → `User`.
+/// - `AccountModel` → `Account`.
+/// - `AccountDocsModel` → `AccountDocs`.
+/// - `CurrencyModel` → `Currency`.
+/// - `CurrencyDocsModel` → `CurrencyDocs`.
 /// {@endtemplate}
 class $Mapper implements _i1.AutoMapprInterface {
   const $Mapper();
@@ -29,10 +37,34 @@ class $Mapper implements _i1.AutoMapprInterface {
   bool canConvert<SOURCE, TARGET>({bool recursive = true}) {
     final sourceTypeOf = _typeOf<SOURCE>();
     final targetTypeOf = _typeOf<TARGET>();
-    if ((sourceTypeOf == _typeOf<_i2.RegisterModel>() ||
-            sourceTypeOf == _typeOf<_i2.RegisterModel?>()) &&
-        (targetTypeOf == _typeOf<_i3.Register>() ||
-            targetTypeOf == _typeOf<_i3.Register?>())) {
+    if ((sourceTypeOf == _typeOf<_i2.UserModel>() ||
+            sourceTypeOf == _typeOf<_i2.UserModel?>()) &&
+        (targetTypeOf == _typeOf<_i3.User>() ||
+            targetTypeOf == _typeOf<_i3.User?>())) {
+      return true;
+    }
+    if ((sourceTypeOf == _typeOf<_i4.AccountModel>() ||
+            sourceTypeOf == _typeOf<_i4.AccountModel?>()) &&
+        (targetTypeOf == _typeOf<_i5.Account>() ||
+            targetTypeOf == _typeOf<_i5.Account?>())) {
+      return true;
+    }
+    if ((sourceTypeOf == _typeOf<_i4.AccountDocsModel>() ||
+            sourceTypeOf == _typeOf<_i4.AccountDocsModel?>()) &&
+        (targetTypeOf == _typeOf<_i5.AccountDocs>() ||
+            targetTypeOf == _typeOf<_i5.AccountDocs?>())) {
+      return true;
+    }
+    if ((sourceTypeOf == _typeOf<_i6.CurrencyModel>() ||
+            sourceTypeOf == _typeOf<_i6.CurrencyModel?>()) &&
+        (targetTypeOf == _typeOf<_i7.Currency>() ||
+            targetTypeOf == _typeOf<_i7.Currency?>())) {
+      return true;
+    }
+    if ((sourceTypeOf == _typeOf<_i6.CurrencyDocsModel>() ||
+            sourceTypeOf == _typeOf<_i6.CurrencyDocsModel?>()) &&
+        (targetTypeOf == _typeOf<_i7.CurrencyDocs>() ||
+            targetTypeOf == _typeOf<_i7.CurrencyDocs?>())) {
       return true;
     }
     if (recursive) {
@@ -226,15 +258,55 @@ class $Mapper implements _i1.AutoMapprInterface {
   }) {
     final sourceTypeOf = _typeOf<SOURCE>();
     final targetTypeOf = _typeOf<TARGET>();
-    if ((sourceTypeOf == _typeOf<_i2.RegisterModel>() ||
-            sourceTypeOf == _typeOf<_i2.RegisterModel?>()) &&
-        (targetTypeOf == _typeOf<_i3.Register>() ||
-            targetTypeOf == _typeOf<_i3.Register?>())) {
+    if ((sourceTypeOf == _typeOf<_i2.UserModel>() ||
+            sourceTypeOf == _typeOf<_i2.UserModel?>()) &&
+        (targetTypeOf == _typeOf<_i3.User>() ||
+            targetTypeOf == _typeOf<_i3.User?>())) {
       if (canReturnNull && model == null) {
         return null;
       }
-      return (_map__i2$RegisterModel_To__i3$Register(
-          (model as _i2.RegisterModel?)) as TARGET);
+      return (_map__i2$UserModel_To__i3$User((model as _i2.UserModel?))
+          as TARGET);
+    }
+    if ((sourceTypeOf == _typeOf<_i4.AccountModel>() ||
+            sourceTypeOf == _typeOf<_i4.AccountModel?>()) &&
+        (targetTypeOf == _typeOf<_i5.Account>() ||
+            targetTypeOf == _typeOf<_i5.Account?>())) {
+      if (canReturnNull && model == null) {
+        return null;
+      }
+      return (_map__i4$AccountModel_To__i5$Account((model as _i4.AccountModel?))
+          as TARGET);
+    }
+    if ((sourceTypeOf == _typeOf<_i4.AccountDocsModel>() ||
+            sourceTypeOf == _typeOf<_i4.AccountDocsModel?>()) &&
+        (targetTypeOf == _typeOf<_i5.AccountDocs>() ||
+            targetTypeOf == _typeOf<_i5.AccountDocs?>())) {
+      if (canReturnNull && model == null) {
+        return null;
+      }
+      return (_map__i4$AccountDocsModel_To__i5$AccountDocs(
+          (model as _i4.AccountDocsModel?)) as TARGET);
+    }
+    if ((sourceTypeOf == _typeOf<_i6.CurrencyModel>() ||
+            sourceTypeOf == _typeOf<_i6.CurrencyModel?>()) &&
+        (targetTypeOf == _typeOf<_i7.Currency>() ||
+            targetTypeOf == _typeOf<_i7.Currency?>())) {
+      if (canReturnNull && model == null) {
+        return null;
+      }
+      return (_map__i6$CurrencyModel_To__i7$Currency(
+          (model as _i6.CurrencyModel?)) as TARGET);
+    }
+    if ((sourceTypeOf == _typeOf<_i6.CurrencyDocsModel>() ||
+            sourceTypeOf == _typeOf<_i6.CurrencyDocsModel?>()) &&
+        (targetTypeOf == _typeOf<_i7.CurrencyDocs>() ||
+            targetTypeOf == _typeOf<_i7.CurrencyDocs?>())) {
+      if (canReturnNull && model == null) {
+        return null;
+      }
+      return (_map__i6$CurrencyDocsModel_To__i7$CurrencyDocs(
+          (model as _i6.CurrencyDocsModel?)) as TARGET);
     }
     throw Exception('No ${model.runtimeType} -> $targetTypeOf mapping.');
   }
@@ -268,14 +340,101 @@ class $Mapper implements _i1.AutoMapprInterface {
     return false;
   }
 
-  _i3.Register _map__i2$RegisterModel_To__i3$Register(
-      _i2.RegisterModel? input) {
+  _i3.User _map__i2$UserModel_To__i3$User(_i2.UserModel? input) {
     final model = input;
     if (model == null) {
       throw Exception(
-          r'Mapping RegisterModel → Register failed because RegisterModel was null, and no default value was provided. '
-          r'Consider setting the whenSourceIsNull parameter on the MapType<RegisterModel, Register> to handle null values during mapping.');
+          r'Mapping UserModel → User failed because UserModel was null, and no default value was provided. '
+          r'Consider setting the whenSourceIsNull parameter on the MapType<UserModel, User> to handle null values during mapping.');
     }
-    return _i3.Register(token: model.token);
+    return _i3.User(
+      accessToken: model.accessToken,
+      refreshToken: model.refreshToken,
+      userId: model.userId,
+      email: model.email,
+      username: model.username,
+      hasAccount: model.hasAccount,
+    );
+  }
+
+  _i5.Account _map__i4$AccountModel_To__i5$Account(_i4.AccountModel? input) {
+    final model = input;
+    if (model == null) {
+      throw Exception(
+          r'Mapping AccountModel → Account failed because AccountModel was null, and no default value was provided. '
+          r'Consider setting the whenSourceIsNull parameter on the MapType<AccountModel, Account> to handle null values during mapping.');
+    }
+    return _i5.Account(
+      items: model.items
+          .map<_i5.AccountDocs?>((value) =>
+              _map__i4$AccountDocsModel_To__i5$AccountDocs_Nullable(value))
+          .toList(),
+      currentPage: model.currentPage,
+      pageSize: model.pageSize,
+      totalPages: model.totalPages,
+      totalItems: model.totalItems,
+    );
+  }
+
+  _i5.AccountDocs _map__i4$AccountDocsModel_To__i5$AccountDocs(
+      _i4.AccountDocsModel? input) {
+    final model = input;
+    if (model == null) {
+      throw Exception(
+          r'Mapping AccountDocsModel → AccountDocs failed because AccountDocsModel was null, and no default value was provided. '
+          r'Consider setting the whenSourceIsNull parameter on the MapType<AccountDocsModel, AccountDocs> to handle null values during mapping.');
+    }
+    return _i5.AccountDocs(
+      id: model.id,
+      accountName: model.accountName,
+      currencyCode: model.currencyCode,
+      initialBalance: model.initialBalance,
+      currentBalance: model.currentBalance,
+    );
+  }
+
+  _i7.Currency _map__i6$CurrencyModel_To__i7$Currency(
+      _i6.CurrencyModel? input) {
+    final model = input;
+    if (model == null) {
+      throw Exception(
+          r'Mapping CurrencyModel → Currency failed because CurrencyModel was null, and no default value was provided. '
+          r'Consider setting the whenSourceIsNull parameter on the MapType<CurrencyModel, Currency> to handle null values during mapping.');
+    }
+    return _i7.Currency(
+        items: model.items
+            .map<_i7.CurrencyDocs>((value) =>
+                _map__i6$CurrencyDocsModel_To__i7$CurrencyDocs(value))
+            .toList());
+  }
+
+  _i7.CurrencyDocs _map__i6$CurrencyDocsModel_To__i7$CurrencyDocs(
+      _i6.CurrencyDocsModel? input) {
+    final model = input;
+    if (model == null) {
+      throw Exception(
+          r'Mapping CurrencyDocsModel → CurrencyDocs failed because CurrencyDocsModel was null, and no default value was provided. '
+          r'Consider setting the whenSourceIsNull parameter on the MapType<CurrencyDocsModel, CurrencyDocs> to handle null values during mapping.');
+    }
+    return _i7.CurrencyDocs(
+      code: model.code,
+      name: model.name,
+      symbol: model.symbol,
+    );
+  }
+
+  _i5.AccountDocs? _map__i4$AccountDocsModel_To__i5$AccountDocs_Nullable(
+      _i4.AccountDocsModel? input) {
+    final model = input;
+    if (model == null) {
+      return null;
+    }
+    return _i5.AccountDocs(
+      id: model.id,
+      accountName: model.accountName,
+      currencyCode: model.currencyCode,
+      initialBalance: model.initialBalance,
+      currentBalance: model.currentBalance,
+    );
   }
 }

@@ -29,6 +29,12 @@ class _$AppRouter extends RootStackRouter {
         child: const AuthPage(),
       );
     },
+    InitAccountRoute.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const InitAccountPage(),
+      );
+    },
     HomeRoute.name: (routeData) {
       return CupertinoPageX<void>(
         routeData: routeData,
@@ -57,6 +63,10 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           AuthRoute.name,
           path: '/auth',
+        ),
+        RouteConfig(
+          InitAccountRoute.name,
+          path: '/initAccount',
         ),
         RouteConfig(
           HomeRoute.name,
@@ -97,6 +107,18 @@ class AuthRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'AuthRoute';
+}
+
+/// generated route for
+/// [InitAccountPage]
+class InitAccountRoute extends PageRouteInfo<void> {
+  const InitAccountRoute()
+      : super(
+          InitAccountRoute.name,
+          path: '/initAccount',
+        );
+
+  static const String name = 'InitAccountRoute';
 }
 
 /// generated route for

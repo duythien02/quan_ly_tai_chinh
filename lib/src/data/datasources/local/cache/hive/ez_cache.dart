@@ -10,9 +10,10 @@ import 'package:injectable/injectable.dart';
 import '../../../../../core/logger/logger.dart';
 import '../../../../../core/utils/utils.dart';
 import '../../../../../domain/entities/entities.dart';
+import '../../../../../domain/entities/user.dart';
 import '../../../../../injector/injector.dart';
+import '../../auth/auth_dao.dart';
 import '../../key/keys.dart';
-import '../../register/register_dao.dart';
 
 @lazySingleton
 class EZCache {
@@ -80,7 +81,7 @@ class EZCache {
   Future<String> get languageOption async {
     final option = await get<String>(Keys.languageOption);
 
-    return option ?? AppLocale.ja;
+    return option ?? AppLocale.vi;
   }
 
   Future<void> saveLanguageOption(final String languageIndex) =>
@@ -121,12 +122,26 @@ class EZCache {
     return Utils.nullSafety(token);
   }
 
-  Future<void> saveAccessToken(final String? authToken) {
-    return save(Keys.accessToken, authToken);
+  Future<void> saveAccessToken(final String? accessToken) {
+    return save(Keys.accessToken, accessToken);
   }
 
   Future<void> removeAccessToken() {
     return remove(Keys.accessToken);
+  }
+
+  Future<String> get refreshToken async {
+    final token = await get<String?>(Keys.refreshToken);
+
+    return Utils.nullSafety(token);
+  }
+
+  Future<void> saveRefreshToken(final String? refreshToken) {
+    return save(Keys.refreshToken, refreshToken);
+  }
+
+  Future<void> removeRefreshToken() {
+    return remove(Keys.refreshToken);
   }
 
   Future<String> get firebaseToken async {
@@ -139,9 +154,9 @@ class EZCache {
     return save<String?>(Keys.firebaseToken, firebaseToken);
   }
 
-  RegisterDao get registerDao => getIt<RegisterDao>();
+  UserDao get userDao => getIt<UserDao>();
 
   static Future<void> registerAdapter() async {
-    Hive.registerAdapter(RegisterAdapter());
+    Hive.registerAdapter(UserAdapter());
   }
 }

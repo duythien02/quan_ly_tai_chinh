@@ -6,12 +6,14 @@ abstract class AuthEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class AuthLoginEvent extends AuthEvent {
-  AuthLoginEvent(this.params);
+class AuthLoginRequested extends AuthEvent {
+  AuthLoginRequested(this.params);
   final LoginRequestParams params;
 }
 
-class AuthRegisterEvent extends AuthEvent {
-  AuthRegisterEvent(this.params);
+class AuthRegisterRequested extends AuthEvent {
+  AuthRegisterRequested(this.params);
   final RegisterRequestParams params;
 }
+
+class AuthInitAccount extends AuthEvent {}

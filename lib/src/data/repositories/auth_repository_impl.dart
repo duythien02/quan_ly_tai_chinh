@@ -8,7 +8,7 @@ import '../../core/extensions/dio_response.dart';
 import '../../core/resources/data_state.dart';
 import '../../core/utils/mappers.dart';
 import '../../domain/entities/entities.dart';
-import '../../domain/entities/login.dart';
+import '../../domain/entities/user.dart';
 import '../../domain/repositories/auth_repository.dart';
 import '../../injector/injector.dart';
 import '../datasources/local/cache/hive/ez_cache.dart';
@@ -25,27 +25,25 @@ class AuthRepositoryImpl implements AuthRepository {
   final EZCache _ezCache;
 
   @override
-  Future<DataState<Register?>> register(
+  Future<DataState<User?>> register(
     final RegisterRequestParams params,
   ) async {
     try {
       final httpResponse = await _authApiService.register(params);
-      if (httpResponse?.status != HttpStatus.ok) {
+      if (httpResponse.status != HttpStatus.ok) {
         return DataFailure(
           ApiError(
-            message: httpResponse?.message,
+            message: httpResponse.message,
           ),
         );
       }
-      if (httpResponse?.status == HttpStatus.ok) {
-        return DataSuccess(
-          getIt<Mapper>().tryConvert(httpResponse?.data),
-        );
+      if (httpResponse.status == HttpStatus.ok) {
+        return DataSuccess(getIt<Mapper>().tryConvert(httpResponse.data));
       }
       return DataFailure(
         ApiError(
-          code: httpResponse?.code,
-          message: httpResponse?.message,
+          code: httpResponse.code,
+          message: httpResponse.message,
         ),
       );
     } on DioException catch (error) {
@@ -56,23 +54,23 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<DataState<Login?>> login(
+  Future<DataState<User?>> login(
     final LoginRequestParams params,
   ) async {
     try {
-      // final httpResponse = await _authApiService.login(params);
-      // if (httpResponse?.status != HttpStatus.ok) {
-      //   return DataFailure(
-      //     ApiError(
-      //       message: httpResponse?.message,
-      //     ),
-      //   );
-      // }
-      // if (httpResponse?.status == HttpStatus.ok) {
-      //   return DataSuccess(
-      //     getIt<Mapper>().tryConvert(httpResponse?.data),
-      //   );
-      // }
+      final httpResponse = await _authApiService.login(params);
+      if (httpResponse.status != HttpStatus.ok) {
+        return DataFailure(
+          ApiError(
+            message: httpResponse.message,
+          ),
+        );
+      }
+      if (httpResponse.status == HttpStatus.ok) {
+        return DataSuccess(
+          getIt<Mapper>().tryConvert(httpResponse.data),
+        );
+      }
       return const DataFailure(null);
     } on DioException catch (error) {
       return DataFailure(error.response?.apiError);
@@ -82,7 +80,38 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<void> saveRegister(final Register register) async {
-    _ezCache.registerDao.saveRegister(register);
+  Future<void> saveUser(
+    final User user,
+  ) async {
+    _ezCache.saveRefreshToken(user.refreshToken);
+    _ezCache.saveAccessToken(user.accessToken);
+    _ezCache.userDao.saveUser(user);
+    _ezCache.userDao.saveHasAccount(user.hasAccount ?? false);
+  }
+
+  @override
+  Future<DataState<User?>> refreshToken(
+    final RefreshTokenRequestParams params,
+  ) async {
+    try {
+      final httpResponse = await _authApiService.refreshToken(params);
+      if (httpResponse.status != HttpStatus.ok) {
+        return DataFailure(
+          ApiError(
+            message: httpResponse.message,
+          ),
+        );
+      }
+      if (httpResponse.status == HttpStatus.ok) {
+        return DataSuccess(
+          getIt<Mapper>().tryConvert(httpResponse.data),
+        );
+      }
+      return const DataFailure(null);
+    } on DioException catch (error) {
+      return DataFailure(error.response?.apiError);
+    } catch (e) {
+      return DataFailure(ApiError(message: e.toString()));
+    }
   }
 }

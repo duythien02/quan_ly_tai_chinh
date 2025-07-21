@@ -3,6 +3,10 @@ abstract class HelperRepository {
   Future<String> get accessToken;
   Future<void> removeAccessToken();
 
+  Future<void> saveRefreshToken(final String? token);
+  Future<String> get refreshToken;
+  Future<void> removeRefreshToken();
+
   Future<void> saveDeviceInfo(final Map<String, dynamic> deviceInfo);
   Future<Map<String, dynamic>> get deviceInfo;
 

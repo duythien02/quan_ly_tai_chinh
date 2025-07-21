@@ -11,7 +11,11 @@ import 'mappers.auto_mappr.dart';
 // ignore_for_file: lines_longer_than_80_chars
 
 @AutoMappr([
-  MapType<RegisterModel, Register>(),
+  MapType<UserModel, User>(),
+  MapType<AccountModel, Account>(),
+  MapType<AccountDocsModel, AccountDocs>(),
+  MapType<CurrencyModel, Currency>(),
+  MapType<CurrencyDocsModel, CurrencyDocs>(),
 ])
 @lazySingleton
 class Mapper extends $Mapper {}
