@@ -1,4 +1,3 @@
-// Project imports:
 import '../../../../../config.dart';
 import 'api_provider.dart';
 
@@ -29,10 +28,7 @@ class Network {
   }
 
   final bool enableLogger;
-
   final Environment environment;
-
   final Future<Map<String, dynamic>> Function() getHeadersApiProvider;
-
   late ApiProvider apiProvider;
 }

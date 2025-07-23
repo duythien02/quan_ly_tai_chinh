@@ -1,118 +1,108 @@
 import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
-
+import '../../../data/datasources/local/key/keys.dart';
+import '../../../injector/injector.dart';
+import '../../config/defines/keys.dart';
+import '../../params/auth/refresh_token_request_params.dart';
+import '../../resources/data_state.dart';
+import '../../../domain/usecases/access_token_get_usecase.dart';
 import '../../../domain/usecases/access_token_remove_usecase.dart';
 import '../../../domain/usecases/access_token_save_usecase.dart';
 import '../../../domain/usecases/auth/refresh_token_usecase.dart';
 import '../../../domain/usecases/refresh_token_get_usecase.dart';
-import '../../../domain/usecases/refresh_token_remove_usecase.dart';
 import '../../../domain/usecases/refresh_token_save_usecase.dart';
-import '../../../injector/injector.dart';
-import '../../logger/logger.dart';
-import '../../params/params.dart';
-import '../../routes/app_router.dart';
-import '../end_points.dart';
-import 'header_interceptor.dart';
 
-@injectable
 class AuthInterceptor extends Interceptor {
-  AuthInterceptor();
+  AuthInterceptor(
+    this._refreshTokenUseCase,
+    this._refreshTokenGetUseCase,
+    this._refreshTokenSaveUseCase,
+    this._accessTokenGetUseCase,
+    this._accessTokenSaveUseCase,
+    this._accessTokenRemoveUseCase,
+  );
+  final RefreshTokenUseCase _refreshTokenUseCase;
+  final RefreshTokenGetUseCase _refreshTokenGetUseCase;
+  final RefreshTokenSaveUseCase _refreshTokenSaveUseCase;
+  final AccessTokenGetUseCase _accessTokenGetUseCase;
+  final AccessTokenSaveUseCase _accessTokenSaveUseCase;
+  final AccessTokenRemoveUseCase _accessTokenRemoveUseCase;
 
-  final AccessTokenSaveUseCase _accessTokenSaveUseCase =
-      getIt<AccessTokenSaveUseCase>();
-  final AccessTokenRemoveUseCase _accessTokenRemoveUseCase =
-      getIt<AccessTokenRemoveUseCase>();
-  final RefreshTokenGetUseCase _refreshTokenGetUseCase =
-      getIt<RefreshTokenGetUseCase>();
-  final RefreshTokenSaveUseCase _refreshTokenSaveUseCase =
-      getIt<RefreshTokenSaveUseCase>();
-  final RefreshTokenRemoveUseCase _refreshTokenRemoveUseCase =
-      getIt<RefreshTokenRemoveUseCase>();
+  late final Dio _dio = getIt<Dio>(instanceName: kApiDio);
 
-  final RefreshTokenUseCase _refreshTokenUseCase = getIt<RefreshTokenUseCase>();
+  bool _isRefreshing = false;
+
+  // Hàng đợi chứa các request bị lỗi 401
+  // Mỗi phần tử là một cặp (Record) chứa lỗi và handler tương ứng
+  final List<(DioException, ErrorInterceptorHandler)> _queue = [];
 
   @override
   Future<void> onError(
     final DioException err,
     final ErrorInterceptorHandler handler,
   ) async {
-    // Nếu lỗi là 401 Unauthorized và không phải lỗi của chính API refresh token
-    if (err.response?.statusCode == 401 &&
-        err.requestOptions.path != EndPoints.refreshToken) {
-      try {
-        Log.error('Access token expired. Attempting to refresh token...');
-        final currentRefreshToken = await _refreshTokenGetUseCase();
+    if (err.response?.statusCode == 401) {
+      // Thêm request lỗi vào hàng đợi
+      _queue.add((err, handler));
 
-        if (currentRefreshToken.isNotEmpty) {
-          final refreshResult = await _refreshTokenUseCase(
-            params:
-                RefreshTokenRequestParams(refreshToken: currentRefreshToken),
+      // Nếu đang có một tiến trình refresh token khác chạy,
+      // thì không làm gì cả. Request đã nằm trong hàng đợi và sẽ được xử lý sau.
+      if (_isRefreshing) {
+        return;
+      }
+
+      _isRefreshing = true;
+
+      try {
+        final refreshToken = await _refreshTokenGetUseCase();
+        final result = await _refreshTokenUseCase(
+          params: RefreshTokenRequestParams(refreshToken: refreshToken),
+        );
+
+        if (result is DataSuccess && result.data != null) {
+          final authResponse = result.data!;
+          // Lưu token mới
+          await _accessTokenSaveUseCase(
+            params: authResponse.accessToken ?? '',
+          );
+          await _refreshTokenSaveUseCase(
+            params: authResponse.refreshToken ?? '',
           );
 
-          if (refreshResult.data != null) {
-            final newAccessToken = refreshResult.data!.accessToken;
-            final newRefreshToken = refreshResult.data!.refreshToken;
+          final newAccessToken = await _accessTokenGetUseCase();
 
-            // Lưu access token và refresh token mới
-            await _accessTokenSaveUseCase(
-              params: newAccessToken,
-            ); // Cập nhật cách lưu access token
-            await _refreshTokenSaveUseCase(
-              params: newRefreshToken,
-            ); // Cập nhật cách lưu refresh token
+          // Retry tất cả các request trong hàng đợi với token mới
+          for (final (originalError, originalHandler) in _queue) {
+            // LẤY requestOptions TỪ originalError (DioException)
+            final requestOptions = originalError.requestOptions;
+            requestOptions.headers[Keys.authorization] = newAccessToken;
 
-            Log.info(
-              'Token refreshed successfully. Retrying original request.',
-            );
-
-            // Cập nhật access token cho yêu cầu gốc và thử lại
-            final opts = err.requestOptions;
-            opts.headers['Authorization'] = 'Bearer $newAccessToken';
-
-            // Tạo một Dio instance mới để tránh lặp vô hạn hoặc deadlock
-            // Đây là một Dio instance không có interceptor này để tránh chuỗi lặp lại
-            final Dio dioRetry = Dio(
-              BaseOptions(
-                baseUrl: opts.baseUrl, // Sử dụng baseUrl của request gốc
-              ),
-            );
-            // Thêm lại HeaderInterceptor nếu nó cần cho request retry
-            dioRetry.interceptors.add(
-              HeaderInterceptor(
-                () async => {
-                  'Authorization': 'Bearer $newAccessToken',
-                  // Thêm các header cố định khác nếu có
-                },
-              ),
-            );
-
-            final response = await dioRetry.fetch(opts);
-            return handler.resolve(response);
-          } else {
-            // Refresh token thất bại (refresh token hết hạn hoặc không hợp lệ)
-            Log.error(
-              'Failed to refresh token: ${refreshResult.error?.message}',
-            );
-            await _accessTokenRemoveUseCase(); // Xóa access token cũ
-            await _refreshTokenRemoveUseCase(); // Xóa refresh token cũ
-            getIt<AppRouter>().pushAndPopUntil(
-              const AuthRoute(),
-              predicate: (final _) => false,
-            );
-            return handler.next(err);
+            try {
+              final response = await _dio.fetch(requestOptions);
+              originalHandler.resolve(response);
+            } on DioException catch (e) {
+              originalHandler.reject(e);
+            }
           }
         } else {
-          Log.warning('No refresh token available. Logging out.');
+          // Nếu refresh token thất bại, báo lỗi cho tất cả request đang chờ
           await _accessTokenRemoveUseCase();
-          return handler.next(err);
+          for (final (originalError, originalHandler) in _queue) {
+            originalHandler.reject(originalError);
+          }
         }
-      } catch (e, st) {
-        Log.error('Error during token refresh: $e , $st');
-        await _accessTokenRemoveUseCase();
-        await _refreshTokenRemoveUseCase();
-        return handler.next(err);
+      } catch (e) {
+        // Bắt các lỗi khác và báo lỗi cho tất cả request
+        for (final (originalError, originalHandler) in _queue) {
+          originalHandler.reject(originalError);
+        }
+      } finally {
+        // Dọn dẹp hàng đợi và mở khóa
+        _isRefreshing = false;
+        _queue.clear();
       }
+    } else {
+      // Nếu không phải lỗi 401, cho qua
+      return handler.next(err);
     }
-    return handler.next(err);
   }
 }

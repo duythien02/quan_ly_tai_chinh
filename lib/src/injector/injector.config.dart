@@ -11,6 +11,8 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 import 'package:quan_ly_tai_chinh/src/core/network/ez_network.dart' as _i3;
+import 'package:quan_ly_tai_chinh/src/core/network/interceptors/auth_interceptor.dart'
+    as _i52;
 import 'package:quan_ly_tai_chinh/src/core/utils/deeplink_helper.dart' as _i14;
 import 'package:quan_ly_tai_chinh/src/core/utils/mappers.dart' as _i8;
 import 'package:quan_ly_tai_chinh/src/data/datasources/local/auth/auth_dao.dart'
@@ -95,7 +97,7 @@ import 'package:quan_ly_tai_chinh/src/domain/usecases/setting/save_language_opti
     as _i45;
 import 'package:quan_ly_tai_chinh/src/domain/usecases/setting/save_theme_option_usecase.dart'
     as _i46;
-import 'package:quan_ly_tai_chinh/src/module/register_module.dart' as _i54;
+import 'package:quan_ly_tai_chinh/src/module/register_module.dart' as _i55;
 import 'package:quan_ly_tai_chinh/src/presentation/_blocs/authentication/token_authentication_bloc.dart'
     as _i49;
 import 'package:quan_ly_tai_chinh/src/presentation/account/bloc/account_bloc.dart'
@@ -105,9 +107,9 @@ import 'package:quan_ly_tai_chinh/src/presentation/auth/bloc/auth_bloc.dart'
 import 'package:quan_ly_tai_chinh/src/presentation/home_page/bloc/home_bloc.dart'
     as _i7;
 import 'package:quan_ly_tai_chinh/src/presentation/settings/fonts/fonts_bloc.dart'
-    as _i52;
-import 'package:quan_ly_tai_chinh/src/presentation/settings/multi_language/multi_language_bloc.dart'
     as _i53;
+import 'package:quan_ly_tai_chinh/src/presentation/settings/multi_language/multi_language_bloc.dart'
+    as _i54;
 import 'package:quan_ly_tai_chinh/src/presentation/settings/theme/theme_bloc.dart'
     as _i48;
 
@@ -229,11 +231,19 @@ extension GetItInjectableX on _i1.GetIt {
           gh<_i47.SaveUserUseCase>(),
           gh<_i41.LoginUsecase>(),
         ));
-    gh.factory<_i52.FontsBloc>(() => _i52.FontsBloc(
+    gh.lazySingleton<_i52.AuthInterceptor>(() => registerModule.authInterceptor(
+          gh<_i42.RefreshTokenUseCase>(),
+          gh<_i9.RefreshTokenGetUseCase>(),
+          gh<_i11.RefreshTokenSaveUseCase>(),
+          gh<_i17.AccessTokenGetUseCase>(),
+          gh<_i19.AccessTokenSaveUseCase>(),
+          gh<_i18.AccessTokenRemoveUseCase>(),
+        ));
+    gh.factory<_i53.FontsBloc>(() => _i53.FontsBloc(
           gh<_i36.GetFontOptionUseCase>(),
           gh<_i44.SaveFontOptionUseCase>(),
         ));
-    gh.factory<_i53.MultiLanguageBloc>(() => _i53.MultiLanguageBloc(
+    gh.factory<_i54.MultiLanguageBloc>(() => _i54.MultiLanguageBloc(
           gh<_i37.GetLanguageOptionUseCase>(),
           gh<_i45.SaveLanguageOptionUseCase>(),
         ));
@@ -241,4 +251,4 @@ extension GetItInjectableX on _i1.GetIt {
   }
 }
 
-class _$RegisterModule extends _i54.RegisterModule {}
+class _$RegisterModule extends _i55.RegisterModule {}

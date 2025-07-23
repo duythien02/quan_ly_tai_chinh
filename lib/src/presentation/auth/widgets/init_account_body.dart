@@ -42,9 +42,6 @@ class _InitAccountBodyState extends State<InitAccountBody> {
         if (state is CreateAccountSuccess) {
           getIt<AppRouter>().replaceAll([const HomeRoute()]);
         }
-        if (state is CreateAccountError) {
-          getIt<AppRouter>().replaceAll([const AuthRoute()]);
-        }
       },
       builder: (final context, final state) {
         return Scaffold(

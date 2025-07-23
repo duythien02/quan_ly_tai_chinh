@@ -2,15 +2,37 @@
 import 'package:injectable/injectable.dart';
 
 // Project imports:
-import '../../config.dart';
 import '../core/config/defines/keys.dart';
 import '../core/network/ez_network.dart';
 import '../core/network/interceptors/auth_interceptor.dart';
 import '../data/datasources/remote/api_services.dart';
+import '../domain/usecases/access_token_get_usecase.dart';
+import '../domain/usecases/access_token_remove_usecase.dart';
+import '../domain/usecases/access_token_save_usecase.dart';
+import '../domain/usecases/auth/refresh_token_usecase.dart';
+import '../domain/usecases/refresh_token_get_usecase.dart';
+import '../domain/usecases/refresh_token_save_usecase.dart';
 import '../injector/injector.dart';
 
 @module
 abstract class RegisterModule {
+  @lazySingleton
+  AuthInterceptor authInterceptor(
+    final RefreshTokenUseCase refreshTokenUseCase,
+    final RefreshTokenGetUseCase refreshTokenGetUseCase,
+    final RefreshTokenSaveUseCase refreshTokenSaveUseCase,
+    final AccessTokenGetUseCase accessTokenGetUseCase,
+    final AccessTokenSaveUseCase accessTokenSaveUseCase,
+    final AccessTokenRemoveUseCase accessTokenRemoveUseCase,
+  ) =>
+      AuthInterceptor(
+        refreshTokenUseCase,
+        refreshTokenGetUseCase,
+        refreshTokenSaveUseCase,
+        accessTokenGetUseCase,
+        accessTokenSaveUseCase,
+        accessTokenRemoveUseCase,
+      );
   // register named for api services
   @Named(kApiDio)
   Dio get apiDio => getIt<Network>().apiProvider.apiDio;
@@ -36,19 +58,4 @@ abstract class RegisterModule {
         dio,
         baseUrl: url,
       );
-
-  @lazySingleton
-  Dio provideDio(final AuthInterceptor authInterceptor) {
-    final dio = Dio(
-      BaseOptions(
-        baseUrl: Config.baseUrl,
-        connectTimeout: const Duration(seconds: 30),
-        receiveTimeout: const Duration(seconds: 30),
-        contentType: Headers.jsonContentType,
-      ),
-    );
-
-    dio.interceptors.add(authInterceptor);
-    return dio;
-  }
 }
