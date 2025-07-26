@@ -13,7 +13,6 @@ dependencies:
   lottie: ^2.0.0
   path: ^1.8.3
 
-  
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -1,4 +1,4 @@
-export 'auth/user_model.dart';
+export 'auth/auth_model.dart';
 export 'auth/auth_response_model.dart';
 export 'account/account_model.dart';
 export 'account/currency_model.dart';

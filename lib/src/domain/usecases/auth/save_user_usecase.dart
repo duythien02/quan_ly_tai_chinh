@@ -5,13 +5,13 @@ import '../../entities/entities.dart';
 import '../../repositories/auth_repository.dart';
 
 @injectable
-class SaveUserUseCase implements UseCase<void, User> {
+class SaveUserUseCase implements UseCase<void, Auth> {
   SaveUserUseCase(this._authRepository);
 
   final AuthRepository _authRepository;
 
   @override
-  Future<void> call({required final User params}) {
-    return _authRepository.saveUser(params);
+  Future<void> call({required final Auth params}) {
+    return _authRepository.saveAuth(params);
   }
 }

@@ -1,21 +1,18 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'user_model.dart';
+part of 'auth_model.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-UserModel _$UserModelFromJson(Map<String, dynamic> json) => UserModel(
-      username: json['username']?.toString(),
-      userId: json['userId']?.toString(),
-      email: json['email']?.toString(),
+AuthModel _$AuthModelFromJson(Map<String, dynamic> json) => AuthModel(
       accessToken: json['accessToken']?.toString(),
-      hasAccount: bool.tryParse(json['hasAccount'].toString()),
+      hasAccounts: bool.tryParse(json['hasAccounts'].toString()),
       refreshToken: json['refreshToken']?.toString(),
     );
 
-Map<String, dynamic> _$UserModelToJson(UserModel instance) {
+Map<String, dynamic> _$AuthModelToJson(AuthModel instance) {
   final val = <String, dynamic>{};
 
   void writeNotNull(String key, dynamic value) {
@@ -24,11 +21,8 @@ Map<String, dynamic> _$UserModelToJson(UserModel instance) {
     }
   }
 
-  writeNotNull('username', instance.username);
-  writeNotNull('userId', instance.userId);
-  writeNotNull('email', instance.email);
   writeNotNull('accessToken', instance.accessToken);
   writeNotNull('refreshToken', instance.refreshToken);
-  writeNotNull('hasAccount', instance.hasAccount);
+  writeNotNull('hasAccounts', instance.hasAccounts);
   return val;
 }

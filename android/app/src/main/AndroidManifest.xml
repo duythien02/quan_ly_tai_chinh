@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="biz.quan_ly_tai_chinh.app">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="biz.TDTFinance.app">
   <uses-permission android:name="android.permission.INTERNET"/>
   <!-- Permissions options for the `storage` group -->
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -35,7 +35,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:host="quan_ly_tai_chinh.com" android:scheme="quan_ly_tai_chinh"/>
+        <data android:host="TDTFinance.com" android:scheme="TDTFinance"/>
       </intent-filter>
     </activity>
     <!--

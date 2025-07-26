@@ -22,20 +22,20 @@ Future<void> _handleRoute(final String path) async {
   final accessToken = await getIt<AccessTokenGetUseCase>()();
   if (accessToken.isNotEmpty && path.isNotEmpty) {
     // handle route to tab bar pages
-    // if (Routes.tabBarPages.contains(path)) {
-    //   _handleRouteToTabBarPages(path);
-    // }
+    if (Routes.tabBarPages.contains(path)) {
+      _handleRouteToTabBarPages(path);
+    }
     // // handle route to screen
-    // else {
-    //   getIt<AppRouter>().popUntilRoot();
-    //   await getIt<AppRouter>().pushNamed(path);
-    // }
+    else {
+      getIt<AppRouter>().popUntilRoot();
+      await getIt<AppRouter>().pushNamed(path);
+    }
   }
 }
 
-// void _handleRouteToTabBarPages(final String screenName) {
-//   tabBarOnIndexChange(Routes.tabBarPages.indexOf(screenName));
-// }
+void _handleRouteToTabBarPages(final String screenName) {
+  tabBarOnIndexChange(Routes.tabBarPages.indexOf(screenName));
+}
 
 @lazySingleton
 class DeeplinkHelper {

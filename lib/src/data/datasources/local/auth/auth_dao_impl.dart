@@ -1,28 +1,28 @@
 import 'package:injectable/injectable.dart';
 
-import '../../../../domain/entities/user.dart';
+import '../../../../domain/entities/entities.dart';
 import '../cache/hive/ez_cache.dart';
 import '../key/keys.dart';
 import 'auth_dao.dart';
 
-@LazySingleton(as: UserDao)
-class UserDaoImpl implements UserDao {
-  UserDaoImpl(this._ezCache);
+@LazySingleton(as: AuthDao)
+class AuthDaoImpl implements AuthDao {
+  AuthDaoImpl(this._ezCache);
   final EZCache _ezCache;
 
   @override
-  Future<User?> getSavedUser() async {
-    return _ezCache.get(Keys.user);
+  Future<Auth?> getSavedAuth() async {
+    return _ezCache.get(Keys.authLogin);
   }
 
   @override
-  Future<void> saveUser(final User user) async {
-    return _ezCache.save(Keys.user, user);
+  Future<void> saveAuth(final Auth auth) async {
+    return _ezCache.save(Keys.authLogin, auth);
   }
 
   @override
-  Future<void> removeUser() async {
-    return _ezCache.remove(Keys.user);
+  Future<void> removeAuth() async {
+    return _ezCache.remove(Keys.authLogin);
   }
 
   @override

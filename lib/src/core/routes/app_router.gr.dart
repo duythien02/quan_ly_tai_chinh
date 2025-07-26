@@ -35,10 +35,28 @@ class _$AppRouter extends RootStackRouter {
         child: const InitAccountPage(),
       );
     },
+    TabBarRoute.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const TabBarPage(),
+      );
+    },
     HomeRoute.name: (routeData) {
       return CupertinoPageX<void>(
         routeData: routeData,
         child: const HomePage(),
+      );
+    },
+    CreateTransactionRoute.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const CreateTransactionPage(),
+      );
+    },
+    ProfileRoute.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const ProfilePage(),
       );
     },
     UnknownRouteRoute.name: (routeData) {
@@ -69,8 +87,20 @@ class _$AppRouter extends RootStackRouter {
           path: '/initAccount',
         ),
         RouteConfig(
+          TabBarRoute.name,
+          path: '/tabbar',
+        ),
+        RouteConfig(
           HomeRoute.name,
           path: '/home',
+        ),
+        RouteConfig(
+          CreateTransactionRoute.name,
+          path: '/createTransaction',
+        ),
+        RouteConfig(
+          ProfileRoute.name,
+          path: '/profile',
         ),
         RouteConfig(
           UnknownRouteRoute.name,
@@ -122,6 +152,18 @@ class InitAccountRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [TabBarPage]
+class TabBarRoute extends PageRouteInfo<void> {
+  const TabBarRoute()
+      : super(
+          TabBarRoute.name,
+          path: '/tabbar',
+        );
+
+  static const String name = 'TabBarRoute';
+}
+
+/// generated route for
 /// [HomePage]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute()
@@ -131,6 +173,30 @@ class HomeRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'HomeRoute';
+}
+
+/// generated route for
+/// [CreateTransactionPage]
+class CreateTransactionRoute extends PageRouteInfo<void> {
+  const CreateTransactionRoute()
+      : super(
+          CreateTransactionRoute.name,
+          path: '/createTransaction',
+        );
+
+  static const String name = 'CreateTransactionRoute';
+}
+
+/// generated route for
+/// [ProfilePage]
+class ProfileRoute extends PageRouteInfo<void> {
+  const ProfileRoute()
+      : super(
+          ProfileRoute.name,
+          path: '/profile',
+        );
+
+  static const String name = 'ProfileRoute';
 }
 
 /// generated route for

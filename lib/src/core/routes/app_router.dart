@@ -11,6 +11,9 @@ import '../../presentation/auth/auth_page.dart';
 import '../../presentation/auth/init_account_page.dart';
 import '../../presentation/home_page/home_page.dart';
 import '../../presentation/landing_page/landing_page.dart';
+import '../../presentation/profile/profile_page.dart';
+import '../../presentation/tabbar/view/tabbar.dart';
+import '../../presentation/transaction/create_transaction_page.dart';
 import '../widgets/unknown_route_page.dart';
 import 'routes.dart';
 
@@ -35,8 +38,20 @@ part 'app_router.gr.dart';
       path: Routes.initAccount,
     ),
     AutoRoute<void>(
+      path: Routes.tabbar,
+      page: TabBarPage,
+    ),
+    AutoRoute<void>(
       page: HomePage,
       path: Routes.home,
+    ),
+    AutoRoute<void>(
+      page: CreateTransactionPage,
+      path: Routes.createTransaction,
+    ),
+    AutoRoute<void>(
+      page: ProfilePage,
+      path: Routes.profile,
     ),
     AutoRoute<void>(
       path: Routes.unknown,

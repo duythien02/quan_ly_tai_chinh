@@ -78,9 +78,9 @@ class _MainState extends State<Main> {
               }
               if (state is TokenAuthenticationAuthenticated) {
                 final hasAccount =
-                    await getIt<EZCache>().userDao.getSavedHasAccount();
+                    await getIt<EZCache>().authDao.getSavedHasAccount();
                 if (hasAccount ?? false) {
-                  getIt<AppRouter>().replaceAll([const HomeRoute()]);
+                  getIt<AppRouter>().replaceAll([const TabBarRoute()]);
                 } else {
                   getIt<AppRouter>().replaceAll([const InitAccountRoute()]);
                 }

@@ -1,11 +1,11 @@
-import '../../../../domain/entities/user.dart';
+import '../../../../domain/entities/entities.dart';
 
-abstract class UserDao {
-  Future<User?> getSavedUser();
+abstract class AuthDao {
+  Future<Auth?> getSavedAuth();
 
-  Future<void> saveUser(final User user);
+  Future<void> saveAuth(final Auth auth);
 
-  Future<void> removeUser();
+  Future<void> removeAuth();
 
   Future<void> saveHasAccount(final bool hasAccount);
 

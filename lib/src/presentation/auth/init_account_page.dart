@@ -11,14 +11,16 @@ class InitAccountPage extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) {
-    return BlocProvider(
-      create: (final context) => getIt<AccountBloc>()
-        ..add(
-          GetCurrencies(
-            GetCurrenciesRequestParams(),
+    return Scaffold(
+      body: BlocProvider(
+        create: (final context) => getIt<AccountBloc>()
+          ..add(
+            GetCurrencies(
+              GetCurrenciesRequestParams(),
+            ),
           ),
-        ),
-      child: const InitAccountBody(),
+        child: const InitAccountBody(),
+      ),
     );
   }
 }

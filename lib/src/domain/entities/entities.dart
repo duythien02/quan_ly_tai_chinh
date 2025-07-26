@@ -1,3 +1,3 @@
-export 'user.dart';
+export 'auth.dart';
 export 'account.dart';
 export 'currency.dart';

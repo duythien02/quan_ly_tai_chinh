@@ -11,14 +11,14 @@ import 'package:auto_mappr_annotation/auto_mappr_annotation.dart' as _i1;
 
 import '../../data/models/account/account_model.dart' as _i4;
 import '../../data/models/account/currency_model.dart' as _i6;
-import '../../data/models/auth/user_model.dart' as _i2;
+import '../../data/models/auth/auth_model.dart' as _i2;
 import '../../domain/entities/account.dart' as _i5;
+import '../../domain/entities/auth.dart' as _i3;
 import '../../domain/entities/currency.dart' as _i7;
-import '../../domain/entities/user.dart' as _i3;
 
-/// {@template package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+/// {@template package:TDTFinance/src/core/utils/mappers.dart}
 /// Available mappings:
-/// - `UserModel` → `User`.
+/// - `AuthModel` → `Auth`.
 /// - `AccountModel` → `Account`.
 /// - `AccountDocsModel` → `AccountDocs`.
 /// - `CurrencyModel` → `Currency`.
@@ -32,15 +32,15 @@ class $Mapper implements _i1.AutoMapprInterface {
   List<_i1.AutoMapprInterface> get _delegates => const [];
 
   /// {@macro AutoMapprInterface:canConvert}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   bool canConvert<SOURCE, TARGET>({bool recursive = true}) {
     final sourceTypeOf = _typeOf<SOURCE>();
     final targetTypeOf = _typeOf<TARGET>();
-    if ((sourceTypeOf == _typeOf<_i2.UserModel>() ||
-            sourceTypeOf == _typeOf<_i2.UserModel?>()) &&
-        (targetTypeOf == _typeOf<_i3.User>() ||
-            targetTypeOf == _typeOf<_i3.User?>())) {
+    if ((sourceTypeOf == _typeOf<_i2.AuthModel>() ||
+            sourceTypeOf == _typeOf<_i2.AuthModel?>()) &&
+        (targetTypeOf == _typeOf<_i3.Auth>() ||
+            targetTypeOf == _typeOf<_i3.Auth?>())) {
       return true;
     }
     if ((sourceTypeOf == _typeOf<_i4.AccountModel>() ||
@@ -78,7 +78,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   }
 
   /// {@macro AutoMapprInterface:convert}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   TARGET convert<SOURCE, TARGET>(SOURCE? model) {
     if (canConvert<SOURCE, TARGET>(recursive: false)) {
@@ -94,7 +94,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   }
 
   /// {@macro AutoMapprInterface:tryConvert}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   TARGET? tryConvert<SOURCE, TARGET>(
     SOURCE? model, {
@@ -120,7 +120,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   }
 
   /// {@macro AutoMapprInterface:convertIterable}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   Iterable<TARGET> convertIterable<SOURCE, TARGET>(Iterable<SOURCE?> model) {
     if (canConvert<SOURCE, TARGET>(recursive: false)) {
@@ -139,7 +139,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   ///
   /// When an item in the source iterable is null, uses `whenSourceIsNull` if defined or null
   ///
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   Iterable<TARGET?> tryConvertIterable<SOURCE, TARGET>(
     Iterable<SOURCE?> model, {
@@ -163,7 +163,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   }
 
   /// {@macro AutoMapprInterface:convertList}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   List<TARGET> convertList<SOURCE, TARGET>(Iterable<SOURCE?> model) {
     if (canConvert<SOURCE, TARGET>(recursive: false)) {
@@ -182,7 +182,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   ///
   /// When an item in the source iterable is null, uses `whenSourceIsNull` if defined or null
   ///
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   List<TARGET?> tryConvertList<SOURCE, TARGET>(
     Iterable<SOURCE?> model, {
@@ -208,7 +208,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   }
 
   /// {@macro AutoMapprInterface:convertSet}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   Set<TARGET> convertSet<SOURCE, TARGET>(Iterable<SOURCE?> model) {
     if (canConvert<SOURCE, TARGET>(recursive: false)) {
@@ -227,7 +227,7 @@ class $Mapper implements _i1.AutoMapprInterface {
   ///
   /// When an item in the source iterable is null, uses `whenSourceIsNull` if defined or null
   ///
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   Set<TARGET?> tryConvertSet<SOURCE, TARGET>(
     Iterable<SOURCE?> model, {
@@ -258,14 +258,14 @@ class $Mapper implements _i1.AutoMapprInterface {
   }) {
     final sourceTypeOf = _typeOf<SOURCE>();
     final targetTypeOf = _typeOf<TARGET>();
-    if ((sourceTypeOf == _typeOf<_i2.UserModel>() ||
-            sourceTypeOf == _typeOf<_i2.UserModel?>()) &&
-        (targetTypeOf == _typeOf<_i3.User>() ||
-            targetTypeOf == _typeOf<_i3.User?>())) {
+    if ((sourceTypeOf == _typeOf<_i2.AuthModel>() ||
+            sourceTypeOf == _typeOf<_i2.AuthModel?>()) &&
+        (targetTypeOf == _typeOf<_i3.Auth>() ||
+            targetTypeOf == _typeOf<_i3.Auth?>())) {
       if (canReturnNull && model == null) {
         return null;
       }
-      return (_map__i2$UserModel_To__i3$User((model as _i2.UserModel?))
+      return (_map__i2$AuthModel_To__i3$Auth((model as _i2.AuthModel?))
           as TARGET);
     }
     if ((sourceTypeOf == _typeOf<_i4.AccountModel>() ||
@@ -334,26 +334,23 @@ class $Mapper implements _i1.AutoMapprInterface {
   }
 
   /// {@macro AutoMapprInterface:useSafeMapping}
-  /// {@macro package:quan_ly_tai_chinh/src/core/utils/mappers.dart}
+  /// {@macro package:TDTFinance/src/core/utils/mappers.dart}
   @override
   bool useSafeMapping<SOURCE, TARGET>() {
     return false;
   }
 
-  _i3.User _map__i2$UserModel_To__i3$User(_i2.UserModel? input) {
+  _i3.Auth _map__i2$AuthModel_To__i3$Auth(_i2.AuthModel? input) {
     final model = input;
     if (model == null) {
       throw Exception(
-          r'Mapping UserModel → User failed because UserModel was null, and no default value was provided. '
-          r'Consider setting the whenSourceIsNull parameter on the MapType<UserModel, User> to handle null values during mapping.');
+          r'Mapping AuthModel → Auth failed because AuthModel was null, and no default value was provided. '
+          r'Consider setting the whenSourceIsNull parameter on the MapType<AuthModel, Auth> to handle null values during mapping.');
     }
-    return _i3.User(
+    return _i3.Auth(
       accessToken: model.accessToken,
       refreshToken: model.refreshToken,
-      userId: model.userId,
-      email: model.email,
-      username: model.username,
-      hasAccount: model.hasAccount,
+      hasAccounts: model.hasAccounts,
     );
   }
 

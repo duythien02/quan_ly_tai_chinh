@@ -66,7 +66,7 @@ class AccountRepositoryImpl implements AccountRepository {
         );
       }
       if (httpResponse?.status == HttpStatus.ok) {
-        _ezCache.userDao.saveHasAccount(true);
+        _ezCache.authDao.saveHasAccount(true);
         return DataSuccess(getIt<Mapper>().tryConvert(httpResponse?.data));
       }
       return DataFailure(

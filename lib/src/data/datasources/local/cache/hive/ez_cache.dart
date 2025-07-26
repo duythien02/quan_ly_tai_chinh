@@ -10,7 +10,6 @@ import 'package:injectable/injectable.dart';
 import '../../../../../core/logger/logger.dart';
 import '../../../../../core/utils/utils.dart';
 import '../../../../../domain/entities/entities.dart';
-import '../../../../../domain/entities/user.dart';
 import '../../../../../injector/injector.dart';
 import '../../auth/auth_dao.dart';
 import '../../key/keys.dart';
@@ -154,9 +153,9 @@ class EZCache {
     return save<String?>(Keys.firebaseToken, firebaseToken);
   }
 
-  UserDao get userDao => getIt<UserDao>();
+  AuthDao get authDao => getIt<AuthDao>();
 
   static Future<void> registerAdapter() async {
-    Hive.registerAdapter(UserAdapter());
+    Hive.registerAdapter(AuthAdapter());
   }
 }

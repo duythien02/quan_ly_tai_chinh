@@ -1,25 +1,25 @@
 import '../../core/resources/data_state.dart';
 import '../../core/params/params.dart';
-import '../entities/user.dart';
+import '../entities/entities.dart';
 
 abstract class AuthRepository {
-  Future<DataState<User?>> login(
+  Future<DataState<Auth?>> login(
     final LoginRequestParams params,
   );
 
-  Future<DataState<User?>> register(
+  Future<DataState<Auth?>> register(
     final RegisterRequestParams params,
   );
 
-  Future<DataState<User?>> refreshToken(
+  Future<DataState<Auth?>> refreshToken(
     final RefreshTokenRequestParams params,
   );
 
   // Database methods
-  // Future<Login?> getSavedLogin();
+  Future<Auth?> getSavedAuth();
 
-  Future<void> saveUser(
-    final User auth,
+  Future<void> saveAuth(
+    final Auth auth,
   );
 
   // Future<void> removeLogin();

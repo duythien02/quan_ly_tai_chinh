@@ -8,7 +8,7 @@ part of 'auth_response_model.dart';
 
 AuthResponseModel _$AuthResponseModelFromJson(Map<String, dynamic> json) =>
     AuthResponseModel(
-      data: UserModel.fromJson(json['data'] as Map<String, dynamic>),
+      data: AuthModel.fromJson(json['data'] as Map<String, dynamic>),
     )
       ..status = double.tryParse(json['status'].toString())?.toInt()
       ..code = json['code']?.toString()

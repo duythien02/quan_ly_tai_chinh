@@ -9,13 +9,13 @@ import '../../repositories/auth_repository.dart';
 
 @injectable
 class RefreshTokenUseCase
-    implements UseCase<DataState<User?>, RefreshTokenRequestParams> {
+    implements UseCase<DataState<Auth?>, RefreshTokenRequestParams> {
   const RefreshTokenUseCase(this._authRepository);
 
   final AuthRepository _authRepository;
 
   @override
-  Future<DataState<User?>> call({
+  Future<DataState<Auth?>> call({
     required final RefreshTokenRequestParams params,
   }) {
     return _authRepository.refreshToken(params);

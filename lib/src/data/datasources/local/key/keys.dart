@@ -3,7 +3,7 @@ class Keys {
 
   //app authorized element
   static const String authorization = 'authorization';
-  static const String user = 'user';
+  static const String authLogin = 'authLogin';
   static const String accessToken = 'accessToken';
   static const String refreshToken = 'refreshToken';
   static const String hasAccount = 'hasAccount';

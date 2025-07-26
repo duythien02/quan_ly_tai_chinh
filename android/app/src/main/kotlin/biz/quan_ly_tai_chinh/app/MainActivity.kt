@@ -1,4 +1,4 @@
-package biz.quan_ly_tai_chinh.app
+package biz.TDTFinance.app
 
 import io.flutter.embedding.android.FlutterActivity
 

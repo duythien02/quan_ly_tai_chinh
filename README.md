@@ -26,7 +26,7 @@ samples, guidance on mobile development, and a full API reference.
 Create 3 files `.env.dev`, `.env.staging`, `.env.prod` that have format like this at the `.env/` folder:
 
 ```
-APP_NAME='quan_ly_tai_chinh'
+APP_NAME='TDTFinance'
 ENV='development'
 BASE_URL=''
 BASE_TOKEN=''

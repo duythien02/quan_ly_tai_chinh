@@ -11,7 +11,7 @@ import 'mappers.auto_mappr.dart';
 // ignore_for_file: lines_longer_than_80_chars
 
 @AutoMappr([
-  MapType<UserModel, User>(),
+  MapType<AuthModel, Auth>(),
   MapType<AccountModel, Account>(),
   MapType<AccountDocsModel, AccountDocs>(),
   MapType<CurrencyModel, Currency>(),

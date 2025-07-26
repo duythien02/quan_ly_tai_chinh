@@ -1,7 +1,7 @@
 class AppStrings {
   AppStrings._();
 
-  static const String title = 'quan_ly_tai_chinh';
+  static const String title = 'TDTFinance';
   static const String nothing = '';
   static const String colon = ':';
   static const String space = ' ';

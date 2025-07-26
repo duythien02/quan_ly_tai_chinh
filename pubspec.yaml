@@ -1,4 +1,4 @@
-name: quan_ly_tai_chinh
+name: TDTFinance
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -134,36 +134,36 @@ flavorizr:
   flavors:
     dev:
       app:
-        name: "quan_ly_tai_chinh - dev"
+        name: "TDTFinance - dev"
 
       android:
-        applicationId: "biz.quan_ly_tai_chinh.app"
+        applicationId: "biz.TDTFinance.app"
         icon: "android/app/src/dev/res"
 
       ios:
-        bundleId: "biz.quan_ly_tai_chinh.app"
+        bundleId: "biz.TDTFinance.app"
 
     prod:
       app:
-        name: "quan_ly_tai_chinh"
+        name: "TDTFinance"
 
       android:
-        applicationId: "biz.quan_ly_tai_chinh.app"
+        applicationId: "biz.TDTFinance.app"
         icon: "android/app/src/prod/res"
 
       ios:
-        bundleId: "biz.quan_ly_tai_chinh.app"
+        bundleId: "biz.TDTFinance.app"
 
     staging:
       app:
-        name: "quan_ly_tai_chinh - staging"
+        name: "TDTFinance - staging"
 
       android:
-        applicationId: "biz.quan_ly_tai_chinh.app"
+        applicationId: "biz.TDTFinance.app"
         icon: "android/app/src/staging/res"
 
       ios:
-        bundleId: "biz.quan_ly_tai_chinh.app"
+        bundleId: "biz.TDTFinance.app"
 flutter_native_splash:
   color: "#ffffff"
   image: assets/images/splash/splash.png

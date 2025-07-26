@@ -1,21 +1,24 @@
 // Flutter imports:
 import 'package:flutter/material.dart' hide TabBarView;
 
+import '../../presentation/home_page/home_page.dart';
+import '../../presentation/profile/profile_page.dart';
+import '../../presentation/transaction/create_transaction_page.dart';
+
 // Project imports:
 
 // Package imports:
 
 enum TabBarItems {
   home,
-  account,
+  createTransaction,
+  profile,
 }
 
 Map<TabBarItems, Widget> getTabBarWidgetsMap() {
   return {
-    // TabBarItems.logHours: const DashboardManagerPage(),
-    // TabBarItems.monthlyAttendance: const MonthlyAttendancePage(),
-    // TabBarItems.request: const DayOffRequestPage(),
-    // if (TabBarView.isManager) TabBarItems.worksite: const DashboardPage(),
-    // TabBarItems.account: const AccountPage(),
+    TabBarItems.home: const HomePage(),
+    TabBarItems.createTransaction: const CreateTransactionPage(),
+    TabBarItems.profile: const ProfilePage(),
   };
 }

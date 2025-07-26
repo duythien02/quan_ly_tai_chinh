@@ -1,3 +1,4 @@
+import 'package:ez_intl/ez_intl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -29,7 +30,7 @@ class _LoginFormState extends State<LoginForm> {
   @override
   Widget build(final BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      appBar: AppBar(title: Text(context.l10n.login)),
       body: BlocListener<AuthBloc, AuthState>(
         listener: (final context, final state) {
           if (state is AuthError) {
@@ -50,13 +51,13 @@ class _LoginFormState extends State<LoginForm> {
             children: [
               CustomTextField(
                 controller: _usernameController,
-                hintText: 'Username',
+                hintText: context.l10n.hintTextUser,
                 keyboardType: TextInputType.text,
               ),
               const SizedBox(height: 16),
               CustomTextField(
                 controller: _passwordController,
-                hintText: 'Password',
+                hintText: context.l10n.hintTextPassword,
                 obscureText: true,
               ),
               const SizedBox(height: 24),
@@ -77,14 +78,14 @@ class _LoginFormState extends State<LoginForm> {
                           },
                     child: state is AuthLoading
                         ? const CircularProgressIndicator()
-                        : const Text('Login'),
+                        : Text(context.l10n.login),
                   );
                 },
               ),
               const SizedBox(height: 16),
               TextButton(
                 onPressed: widget.onRegisterTapped,
-                child: const Text("Don't have an account? Register"),
+                child: Text(context.l10n.dontHaveAnAccount),
               ),
             ],
           ),

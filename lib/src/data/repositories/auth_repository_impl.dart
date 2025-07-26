@@ -8,7 +8,7 @@ import '../../core/extensions/dio_response.dart';
 import '../../core/resources/data_state.dart';
 import '../../core/utils/mappers.dart';
 import '../../domain/entities/entities.dart';
-import '../../domain/entities/user.dart';
+import '../../domain/entities/auth.dart';
 import '../../domain/repositories/auth_repository.dart';
 import '../../injector/injector.dart';
 import '../datasources/local/cache/hive/ez_cache.dart';
@@ -25,7 +25,7 @@ class AuthRepositoryImpl implements AuthRepository {
   final EZCache _ezCache;
 
   @override
-  Future<DataState<User?>> register(
+  Future<DataState<Auth?>> register(
     final RegisterRequestParams params,
   ) async {
     try {
@@ -54,7 +54,7 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<DataState<User?>> login(
+  Future<DataState<Auth?>> login(
     final LoginRequestParams params,
   ) async {
     try {
@@ -80,17 +80,22 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<void> saveUser(
-    final User user,
+  Future<void> saveAuth(
+    final Auth auth,
   ) async {
-    _ezCache.saveRefreshToken(user.refreshToken);
-    _ezCache.saveAccessToken(user.accessToken);
-    _ezCache.userDao.saveUser(user);
-    _ezCache.userDao.saveHasAccount(user.hasAccount ?? false);
+    _ezCache.saveRefreshToken(auth.refreshToken);
+    _ezCache.saveAccessToken(auth.accessToken);
+    _ezCache.authDao.saveAuth(auth);
+    _ezCache.authDao.saveHasAccount(auth.hasAccounts ?? false);
   }
 
   @override
-  Future<DataState<User?>> refreshToken(
+  Future<Auth?> getSavedAuth() {
+    return _ezCache.authDao.getSavedAuth();
+  }
+
+  @override
+  Future<DataState<Auth?>> refreshToken(
     final RefreshTokenRequestParams params,
   ) async {
     try {

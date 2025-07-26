@@ -1,5 +1,5 @@
 class ModelTypeId {
-  static const int user = 1;
+  static const int auth = 1;
   static const int account = 2;
   static const int accountDocs = 3;
   static const int currency = 4;

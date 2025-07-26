@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import '../general_response_model.dart';
-import 'user_model.dart';
+import 'auth_model.dart';
 
 part 'auth_response_model.g.dart';
 
@@ -15,5 +15,5 @@ class AuthResponseModel extends GeneralResponseModel {
       _$AuthResponseModelFromJson(json);
 
   @JsonKey(name: 'data')
-  final UserModel data;
+  final AuthModel data;
 }

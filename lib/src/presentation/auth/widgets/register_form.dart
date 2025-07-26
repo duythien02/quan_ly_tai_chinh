@@ -1,3 +1,4 @@
+import 'package:ez_intl/ez_intl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -32,7 +33,7 @@ class _RegisterFormState extends State<RegisterForm> {
   @override
   Widget build(final BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Register')),
+      appBar: AppBar(title: Text(context.l10n.register)),
       body: BlocListener<AuthBloc, AuthState>(
         listener: (final context, final state) async {
           if (state is AuthRegisterSuccess) {
@@ -50,18 +51,18 @@ class _RegisterFormState extends State<RegisterForm> {
             children: [
               CustomTextField(
                 controller: _usernameController,
-                hintText: 'Username',
+                hintText: context.l10n.hintTextUser,
               ),
               const SizedBox(height: 16),
               CustomTextField(
                 controller: _emailController,
-                hintText: 'Email',
+                hintText: context.l10n.hintTextEmail,
                 keyboardType: TextInputType.emailAddress,
               ),
               const SizedBox(height: 16),
               CustomTextField(
                 controller: _passwordController,
-                hintText: 'Password',
+                hintText: context.l10n.hintTextPassword,
                 obscureText: true,
               ),
               const SizedBox(height: 24),
@@ -83,14 +84,14 @@ class _RegisterFormState extends State<RegisterForm> {
                           },
                     child: state is AuthLoading
                         ? const CircularProgressIndicator()
-                        : const Text('Register'),
+                        : Text(context.l10n.register),
                   );
                 },
               ),
               const SizedBox(height: 16),
               TextButton(
                 onPressed: widget.onLoginTapped,
-                child: const Text('Already have an account? Login'),
+                child: Text(context.l10n.alreadyHaveAnAccount),
               ),
             ],
           ),
