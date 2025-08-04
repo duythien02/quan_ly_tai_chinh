@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 /// Defines the color palette for the App UI.
 abstract class AppColors {
   /// primaryColor
-  static const Color primaryColor = Color(0xff2763AC);
+  static const Color primaryColor = Color.fromARGB(255, 247, 129, 86);
 
   /// canvasColor
   static const Color dividerColor = Color(0xffDEE3ED);
 
   /// primaryColorLight
-  static const Color primaryColorLight = Color(0xffe9eff7);
+  static const Color primaryColorLight = Color(0xFFFFF3E0);
 
   /// hoverColor
-  static const Color hoverColor = Color(0xfffff5d9);
+  static const Color hoverColor = Color(0xFFFFE0B2);
 
   /// backgroundColor
   static const Color white = Color(0xffffffff);
@@ -42,7 +42,7 @@ abstract class AppColors {
   static const Color blue = Color(0xff344ef0);
 
   /// selectedRowColor
-  static const Color lightBlue = Color(0xff1890FF);
+  static const Color lightBlue = Color(0xFFFF8A65);
 
   /// bottomAppBarColor
   static const Color shadowColor = Color.fromRGBO(0, 0, 0, 0.1);

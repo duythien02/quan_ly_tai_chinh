@@ -30,4 +30,9 @@ extension Helpers on String {
   bool isURL() {
     return startsWith('https') || startsWith('http');
   }
+
+  double toDouble() {
+    final String digitsOnly = replaceAll(RegExp('[^0-9]'), '');
+    return double.tryParse(digitsOnly) ?? 0.0;
+  }
 }

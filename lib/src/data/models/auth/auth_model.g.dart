@@ -7,6 +7,7 @@ part of 'auth_model.dart';
 // **************************************************************************
 
 AuthModel _$AuthModelFromJson(Map<String, dynamic> json) => AuthModel(
+      userId: json['userId']?.toString(),
       accessToken: json['accessToken']?.toString(),
       hasAccounts: bool.tryParse(json['hasAccounts'].toString()),
       refreshToken: json['refreshToken']?.toString(),
@@ -21,6 +22,7 @@ Map<String, dynamic> _$AuthModelToJson(AuthModel instance) {
     }
   }
 
+  writeNotNull('userId', instance.userId);
   writeNotNull('accessToken', instance.accessToken);
   writeNotNull('refreshToken', instance.refreshToken);
   writeNotNull('hasAccounts', instance.hasAccounts);

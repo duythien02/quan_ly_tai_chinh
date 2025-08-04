@@ -8,7 +8,7 @@ import 'app_font_type.dart';
 class AppFonts {
   /// Define app font data
   static final appFontData = {
-    AppFontType.base: GoogleFonts.ibmPlexSansJpTextTheme(),
+    AppFontType.base: GoogleFonts.robotoTextTheme(),
     AppFontType.roboto: GoogleFonts.robotoTextTheme(),
     AppFontType.oswald: GoogleFonts.oswaldTextTheme(),
     AppFontType.notoSansJP: GoogleFonts.ibmPlexSansJpTextTheme(),

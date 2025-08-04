@@ -17,21 +17,24 @@ class AuthAdapter extends TypeAdapter<Auth> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Auth(
-      accessToken: fields[0] as String?,
-      refreshToken: fields[1] as String?,
-      hasAccounts: fields[2] as bool?,
+      userId: fields[0] as String?,
+      accessToken: fields[1] as String?,
+      refreshToken: fields[2] as String?,
+      hasAccounts: fields[3] as bool?,
     );
   }
 
   @override
   void write(BinaryWriter writer, Auth obj) {
     writer
-      ..writeByte(3)
+      ..writeByte(4)
       ..writeByte(0)
-      ..write(obj.accessToken)
+      ..write(obj.userId)
       ..writeByte(1)
-      ..write(obj.refreshToken)
+      ..write(obj.accessToken)
       ..writeByte(2)
+      ..write(obj.refreshToken)
+      ..writeByte(3)
       ..write(obj.hasAccounts);
   }
 

@@ -36,11 +36,15 @@ class AccountModel {
 @JsonSerializable()
 class AccountDocsModel {
   AccountDocsModel({
-    required this.id,
-    required this.accountName,
-    required this.currencyCode,
-    required this.initialBalance,
-    required this.currentBalance,
+    this.id,
+    this.accountName,
+    this.currencyCode,
+    this.initialBalance,
+    this.currentBalance,
+    this.isMain,
+    this.accountSymbol,
+    this.totalExpense,
+    this.totalIncome,
   });
 
   factory AccountDocsModel.fromJson(final Map<String, dynamic> json) =>
@@ -49,7 +53,7 @@ class AccountDocsModel {
   Map<String, dynamic> toJson() => _$AccountDocsModelToJson(this);
 
   @JsonKey(name: 'id')
-  final int? id;
+  final String? id;
 
   @JsonKey(name: 'account_name')
   final String? accountName;
@@ -57,9 +61,21 @@ class AccountDocsModel {
   @JsonKey(name: 'currency_code')
   final String? currencyCode;
 
+  @JsonKey(name: 'account_symbol')
+  final String? accountSymbol;
+
   @JsonKey(name: 'initial_balance')
   final double? initialBalance;
 
   @JsonKey(name: 'current_balance')
   final double? currentBalance;
+
+  @JsonKey(name: 'is_main')
+  final bool? isMain;
+
+  @JsonKey(name: 'total_expense')
+  final double? totalExpense;
+
+  @JsonKey(name: 'total_income')
+  final double? totalIncome;
 }

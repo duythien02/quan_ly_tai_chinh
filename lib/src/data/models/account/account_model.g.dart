@@ -22,11 +22,15 @@ AccountModel _$AccountModelFromJson(Map<String, dynamic> json) => AccountModel(
 
 AccountDocsModel _$AccountDocsModelFromJson(Map<String, dynamic> json) =>
     AccountDocsModel(
-      id: double.tryParse(json['id'].toString())?.toInt(),
+      id: json['id']?.toString(),
       accountName: json['account_name']?.toString(),
       currencyCode: json['currency_code']?.toString(),
       initialBalance: double.tryParse(json['initial_balance'].toString()),
       currentBalance: double.tryParse(json['current_balance'].toString()),
+      isMain: bool.tryParse(json['is_main'].toString()),
+      accountSymbol: json['account_symbol']?.toString(),
+      totalExpense: double.tryParse(json['total_expense'].toString()),
+      totalIncome: double.tryParse(json['total_income'].toString()),
     );
 
 Map<String, dynamic> _$AccountDocsModelToJson(AccountDocsModel instance) {
@@ -41,7 +45,11 @@ Map<String, dynamic> _$AccountDocsModelToJson(AccountDocsModel instance) {
   writeNotNull('id', instance.id);
   writeNotNull('account_name', instance.accountName);
   writeNotNull('currency_code', instance.currencyCode);
+  writeNotNull('account_symbol', instance.accountSymbol);
   writeNotNull('initial_balance', instance.initialBalance);
   writeNotNull('current_balance', instance.currentBalance);
+  writeNotNull('is_main', instance.isMain);
+  writeNotNull('total_expense', instance.totalExpense);
+  writeNotNull('total_income', instance.totalIncome);
   return val;
 }

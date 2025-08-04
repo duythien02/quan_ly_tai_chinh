@@ -1,36 +1,42 @@
+// lib/src/core/utils/custom_text_fields.dart
+
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
+  // Thêm thuộc tính này
+
   const CustomTextField({
     super.key,
-    required this.controller,
-    required this.hintText,
+    this.controller,
+    this.hintText,
     this.obscureText = false,
-    this.keyboardType,
-    this.validator,
+    this.keyboardType = TextInputType.text,
+    this.prefixIcon, // Thêm vào constructor
   });
-
-  final TextEditingController controller;
-  final String hintText;
+  final TextEditingController? controller;
+  final String? hintText;
   final bool obscureText;
-  final TextInputType? keyboardType;
-  final String? Function(String?)? validator;
+  final TextInputType keyboardType;
+  final Widget? prefixIcon;
 
   @override
   Widget build(final BuildContext context) {
     return TextFormField(
-      // Changed from TextField to TextFormField for validator
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,
-      validator: validator, // Added validator
       decoration: InputDecoration(
+        prefixIcon: prefixIcon, // Sử dụng icon ở đây
         hintText: hintText,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
+          borderRadius: BorderRadius.circular(12),
         ),
         filled: true,
-        fillColor: Colors.grey[200],
+        fillColor: Colors.grey.shade100,
+        contentPadding: const EdgeInsets.symmetric(
+          vertical: 16,
+          horizontal: 12,
+        ),
       ),
     );
   }

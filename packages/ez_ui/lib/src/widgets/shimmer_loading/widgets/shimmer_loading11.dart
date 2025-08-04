@@ -21,7 +21,7 @@ class ShimmerLoading11State extends State<ShimmerLoading11> {
 
   Widget buildShimmerCategoryHorizontal() {
     return GridView.count(
-      padding: EdgeInsets.fromLTRB(16.r, 16.r, 16.r, 0),
+      padding: EdgeInsets.zero,
       primary: false,
       childAspectRatio: 1.07,
       shrinkWrap: true,

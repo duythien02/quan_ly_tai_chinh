@@ -34,9 +34,13 @@ class AccountDocs {
     this.currencyCode,
     this.initialBalance,
     this.currentBalance,
+    this.isMain,
+    this.accountSymbol,
+    this.totalExpense,
+    this.totalIncome,
   });
   @HiveField(0)
-  final int? id;
+  final String? id;
 
   @HiveField(1)
   final String? accountName;
@@ -45,8 +49,20 @@ class AccountDocs {
   final String? currencyCode;
 
   @HiveField(3)
-  final double? initialBalance;
+  final String? accountSymbol;
 
   @HiveField(4)
+  final double? initialBalance;
+
+  @HiveField(5)
   final double? currentBalance;
+
+  @HiveField(6)
+  final bool? isMain;
+
+  @HiveField(7)
+  final double? totalExpense;
+
+  @HiveField(8)
+  final double? totalIncome;
 }

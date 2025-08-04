@@ -19,7 +19,7 @@ class _AccountApiService implements AccountApiService {
   String? baseUrl;
 
   @override
-  Future<GetAccountsResponseModel?> getAllAccounts(
+  Future<GetAccountsResponseModel?> getAccounts(
       GetAccountsRequestParams params) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
@@ -34,7 +34,7 @@ class _AccountApiService implements AccountApiService {
     )
             .compose(
               _dio.options,
-              '/accounts',
+              '/account',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -64,7 +64,7 @@ class _AccountApiService implements AccountApiService {
     )
             .compose(
               _dio.options,
-              '/accounts/create',
+              '/account/create',
               queryParameters: queryParameters,
               data: _data,
             )
@@ -95,7 +95,7 @@ class _AccountApiService implements AccountApiService {
     )
             .compose(
               _dio.options,
-              '/accounts/currencies',
+              '/account/currencies',
               queryParameters: queryParameters,
               data: _data,
             )

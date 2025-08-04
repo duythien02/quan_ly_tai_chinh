@@ -12,8 +12,8 @@ abstract class AccountApiService {
   factory AccountApiService(final Dio dio, {final String baseUrl}) =
       _AccountApiService;
 
-  @GET(EndPoints.getAllAccounts)
-  Future<GetAccountsResponseModel?> getAllAccounts(
+  @GET(EndPoints.getAccounts)
+  Future<GetAccountsResponseModel?> getAccounts(
     @Queries() final GetAccountsRequestParams params,
   );
 

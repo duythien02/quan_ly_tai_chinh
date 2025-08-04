@@ -239,4 +239,23 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get hello => 'Xin chào';
+
+  @override
+  String get skip => 'Bỏ qua';
+
+  @override
+  String get welcomeBack => 'Chào mừng trở lại!';
+
+  @override
+  String get loginToContinue => 'Đăng nhập để tiếp tục';
+
+  @override
+  String get forgotPassword => 'Quên mật khẩu?';
+
+  @override
+  String get onboarding_1Title => 'Quản lý chi tiêu dễ dàng';
+
+  @override
+  String get onboarding_1Description =>
+      'Ghi chép lại mọi khoản thu chi hàng ngày để có cái nhìn tổng quan về tài chính của bạn.';
 }

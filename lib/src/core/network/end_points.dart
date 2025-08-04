@@ -9,9 +9,20 @@ class EndPoints {
   static const String refreshToken = '/auth/refresh-token';
 
   //account
-  static const String getAllAccounts = '/accounts';
-  static const String createAccount = '/accounts/create';
-  static const String getCurrencies = '/accounts/currencies';
+  static const String getAccounts = '/account';
+  static const String createAccount = '/account/create';
+  static const String getCurrencies = '/account/currencies';
+
+  //user profile
+  static const String getMe = '/user/me';
+
+  //transaction
+  static const String getTransactionSummary = '/transaction/summary';
+  static const String createTransaction = '/transaction/create';
+
+  //category
+  static const String getCategories = '/category';
+  static const String createCategory = '/category/create';
 }
 
 String getDotEnv(final String key) {

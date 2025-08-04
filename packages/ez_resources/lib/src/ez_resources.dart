@@ -16,8 +16,16 @@ class EZResources {
 
   static Widget image(final ImageParams params) {
     final imageType = p.extension(params.name);
-
     if (imageType == '.svg') {
+      //Handle svg image from network
+      if (params.name.contains('http')) {
+        return SvgPicture.network(
+          params.name,
+          width: params.size?.width,
+          height: params.size?.height,
+          fit: params.fit,
+        );
+      }
       return SvgPicture.asset(
         params.name,
         width: params.size?.width,

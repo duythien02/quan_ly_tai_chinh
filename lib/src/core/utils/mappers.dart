@@ -16,6 +16,11 @@ import 'mappers.auto_mappr.dart';
   MapType<AccountDocsModel, AccountDocs>(),
   MapType<CurrencyModel, Currency>(),
   MapType<CurrencyDocsModel, CurrencyDocs>(),
+  MapType<UserProfileModel, UserProfile>(),
+  MapType<TransactionSummaryModel, TransactionSummary>(),
+  MapType<TransactionSummaryDocsModel, TransactionSummaryDocs>(),
+  MapType<CategoryModel, Category>(),
+  MapType<CategoryDocsModel, CategoryDocs>(),
 ])
 @lazySingleton
 class Mapper extends $Mapper {}

@@ -45,7 +45,7 @@ class AuthInterceptor extends Interceptor {
       _queue.add((err, handler));
 
       // Nếu đang có một tiến trình refresh token khác chạy,
-      // thì không làm gì cả. Request đã nằm trong hàng đợi và sẽ được xử lý sau.
+      // thì không làm gì cả. Request đã nằm trong hàng đợi và sẽ được xử lý sau
       if (_isRefreshing) {
         return;
       }

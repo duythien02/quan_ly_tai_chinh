@@ -22,5 +22,5 @@ abstract class AuthRepository {
     final Auth auth,
   );
 
-  // Future<void> removeLogin();
+  Future<void> removeAuth();
 }

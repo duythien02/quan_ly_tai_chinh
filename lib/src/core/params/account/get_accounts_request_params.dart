@@ -4,7 +4,7 @@ part 'get_accounts_request_params.mapper.dart';
 @MappableClass()
 class GetAccountsRequestParams with GetAccountsRequestParamsMappable {
   GetAccountsRequestParams({
-    this.limit = 10,
+    this.limit = 5,
     this.page = 1,
   });
 

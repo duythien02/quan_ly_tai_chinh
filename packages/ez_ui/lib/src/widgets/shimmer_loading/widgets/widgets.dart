@@ -10,3 +10,4 @@ export 'shimmer_loading6.dart';
 export 'shimmer_loading7.dart';
 export 'shimmer_loading8.dart';
 export 'shimmer_loading9.dart';
+export 'shimmer_loading13.dart';

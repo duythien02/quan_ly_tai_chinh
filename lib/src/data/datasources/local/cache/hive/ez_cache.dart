@@ -13,6 +13,7 @@ import '../../../../../domain/entities/entities.dart';
 import '../../../../../injector/injector.dart';
 import '../../auth/auth_dao.dart';
 import '../../key/keys.dart';
+import '../../user_profile/user_profile_dao.dart';
 
 @lazySingleton
 class EZCache {
@@ -154,8 +155,10 @@ class EZCache {
   }
 
   AuthDao get authDao => getIt<AuthDao>();
+  UserProfileDao get userProfileDao => getIt<UserProfileDao>();
 
   static Future<void> registerAdapter() async {
     Hive.registerAdapter(AuthAdapter());
+    Hive.registerAdapter(UserProfileAdapter());
   }
 }

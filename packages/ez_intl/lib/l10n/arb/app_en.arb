@@ -379,4 +379,29 @@
     "type": "text",
     "placeholders": {}
   },
+  "Skip": "Skip",
+  "@Skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcomeBack": "Welcome Back",
+  "@welcomeBack": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginToContinue": "Login to continue",
+  "@loginToContinue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboarding_1Title": "Easy expense management",
+  "@onboarding_1Title": {
+    "type": "text",
+    "placeholders": {}
+  },
 }

@@ -25,15 +25,9 @@ class Keys {
 
   //cache key
   static const String hiveBoxName = 'hiveBoxName';
-  static const String login = 'login';
-  static const String account = 'account';
 
   // user identity
-  static const String userId = 'userId';
-  static const String userLoginId = 'userLoginId';
-  // static const String userName = 'userName';
-  static const String password = 'password';
-  static const String avatar = 'avatar';
+  static const String userProfile = 'userProfile';
 
   //firebase
   static const String firebaseToken = 'firebaseToken';

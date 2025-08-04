@@ -13,7 +13,7 @@ import '../../../core/resources/data_state.dart';
 import '../../../domain/entities/entities.dart';
 import '../../../domain/usecases/auth/login_usecase.dart';
 import '../../../domain/usecases/auth/register_usecase.dart';
-import '../../../domain/usecases/auth/save_user_usecase.dart';
+import '../../../domain/usecases/auth/save_auth_usecase.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';

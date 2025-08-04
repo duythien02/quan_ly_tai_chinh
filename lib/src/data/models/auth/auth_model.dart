@@ -5,6 +5,7 @@ part 'auth_model.g.dart'; // Generated code
 @JsonSerializable()
 class AuthModel {
   AuthModel({
+    this.userId,
     this.accessToken,
     this.hasAccounts,
     this.refreshToken,
@@ -12,6 +13,9 @@ class AuthModel {
 
   factory AuthModel.fromJson(final Map<String, dynamic> json) =>
       _$AuthModelFromJson(json);
+
+  @JsonKey(name: 'userId')
+  final String? userId;
 
   @JsonKey(name: 'accessToken')
   final String? accessToken;

@@ -6,6 +6,9 @@ import '../core/config/defines/keys.dart';
 import '../core/network/ez_network.dart';
 import '../core/network/interceptors/auth_interceptor.dart';
 import '../data/datasources/remote/api_services.dart';
+import '../data/datasources/remote/category_api_service.dart';
+import '../data/datasources/remote/transaction_api_service.dart';
+import '../data/datasources/remote/user_profile_api_service.dart';
 import '../domain/usecases/access_token_get_usecase.dart';
 import '../domain/usecases/access_token_remove_usecase.dart';
 import '../domain/usecases/access_token_save_usecase.dart';
@@ -58,4 +61,25 @@ abstract class RegisterModule {
         dio,
         baseUrl: url,
       );
+
+  @lazySingleton
+  UserProfileApiService userProfileApiService(
+    @Named(kApiDio) final Dio dio,
+    @Named(kApiBaseUrl) final String url,
+  ) =>
+      UserProfileApiService(dio, baseUrl: url);
+
+  @lazySingleton
+  TransactionApiService transactionApiService(
+    @Named(kApiDio) final Dio dio,
+    @Named(kApiBaseUrl) final String url,
+  ) =>
+      TransactionApiService(dio, baseUrl: url);
+
+  @lazySingleton
+  CategoryApiService categoryApiService(
+    @Named(kApiDio) final Dio dio,
+    @Named(kApiBaseUrl) final String url,
+  ) =>
+      CategoryApiService(dio, baseUrl: url);
 }

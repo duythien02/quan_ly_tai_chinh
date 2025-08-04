@@ -119,4 +119,9 @@ class AuthRepositoryImpl implements AuthRepository {
       return DataFailure(ApiError(message: e.toString()));
     }
   }
+
+  @override
+  Future<void> removeAuth() {
+    return _ezCache.authDao.removeAuth();
+  }
 }

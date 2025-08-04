@@ -63,18 +63,22 @@ class AccountDocsAdapter extends TypeAdapter<AccountDocs> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return AccountDocs(
-      id: fields[0] as int?,
+      id: fields[0] as String?,
       accountName: fields[1] as String?,
       currencyCode: fields[2] as String?,
-      initialBalance: fields[3] as double?,
-      currentBalance: fields[4] as double?,
+      initialBalance: fields[4] as double?,
+      currentBalance: fields[5] as double?,
+      isMain: fields[6] as bool?,
+      accountSymbol: fields[3] as String?,
+      totalExpense: fields[7] as double?,
+      totalIncome: fields[8] as double?,
     );
   }
 
   @override
   void write(BinaryWriter writer, AccountDocs obj) {
     writer
-      ..writeByte(5)
+      ..writeByte(9)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -82,9 +86,17 @@ class AccountDocsAdapter extends TypeAdapter<AccountDocs> {
       ..writeByte(2)
       ..write(obj.currencyCode)
       ..writeByte(3)
-      ..write(obj.initialBalance)
+      ..write(obj.accountSymbol)
       ..writeByte(4)
-      ..write(obj.currentBalance);
+      ..write(obj.initialBalance)
+      ..writeByte(5)
+      ..write(obj.currentBalance)
+      ..writeByte(6)
+      ..write(obj.isMain)
+      ..writeByte(7)
+      ..write(obj.totalExpense)
+      ..writeByte(8)
+      ..write(obj.totalIncome);
   }
 
   @override

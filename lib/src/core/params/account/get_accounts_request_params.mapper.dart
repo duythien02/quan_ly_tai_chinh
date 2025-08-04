@@ -24,7 +24,7 @@ class GetAccountsRequestParamsMapper
 
   static int _$limit(GetAccountsRequestParams v) => v.limit;
   static const Field<GetAccountsRequestParams, int> _f$limit =
-      Field('limit', _$limit, opt: true, def: 10);
+      Field('limit', _$limit, opt: true, def: 5);
   static int _$page(GetAccountsRequestParams v) => v.page;
   static const Field<GetAccountsRequestParams, int> _f$page =
       Field('page', _$page, opt: true, def: 1);

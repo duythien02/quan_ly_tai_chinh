@@ -28,7 +28,7 @@ class AccountRepositoryImpl implements AccountRepository {
     final GetAccountsRequestParams params,
   ) async {
     try {
-      final httpResponse = await _accountApiService.getAllAccounts(params);
+      final httpResponse = await _accountApiService.getAccounts(params);
       if (httpResponse?.status != HttpStatus.ok) {
         return DataFailure(
           ApiError(

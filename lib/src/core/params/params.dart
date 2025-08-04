@@ -4,3 +4,7 @@ export 'account/get_accounts_request_params.dart';
 export 'account/create_account_request_params.dart';
 export 'account/get_currencies_request_params.dart';
 export 'auth/refresh_token_request_params.dart';
+export 'profile/get_user_profile_request_params.dart';
+export 'transaction/get_transaction_summary_request_params.dart';
+export 'category/get_categories_request_params.dart';
+export 'transaction/create_transaction_request_params.dart';

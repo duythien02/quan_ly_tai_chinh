@@ -237,4 +237,23 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hello => 'Hello';
+
+  @override
+  String get skip => 'Skip';
+
+  @override
+  String get welcomeBack => 'Welcome back!';
+
+  @override
+  String get loginToContinue => 'Login to continue';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get onboarding_1Title => 'Easy expense management';
+
+  @override
+  String get onboarding_1Description =>
+      'Record every day\'s income and expense to have a clear overview of your finances.';
 }

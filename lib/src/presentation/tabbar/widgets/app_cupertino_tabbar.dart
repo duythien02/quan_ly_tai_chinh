@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 // Package imports:
 import 'package:ez_intl/ez_intl.dart';
 import 'package:ez_resources/ez_resources.dart';
+import 'package:ez_ui/ez_ui.dart';
 
 // Project imports:
 import '../../../core/bloc/ez_bloc.dart';
@@ -29,7 +30,7 @@ class AppCupertinoTabbar extends StatelessWidget {
       ),
       child: CupertinoTabBar(
         key: tabBarGlobalKey,
-        activeColor: Colors.orange,
+        activeColor: AppColors.primaryColor,
         inactiveColor: Colors.grey,
         backgroundColor: Colors.transparent,
         currentIndex: index,
@@ -61,7 +62,7 @@ class AppCupertinoTabbar extends StatelessWidget {
         icon: Container(
           margin: const EdgeInsets.only(top: 2),
           decoration: const BoxDecoration(
-            color: Colors.orange,
+            color: AppColors.primaryColor,
             shape: BoxShape.circle,
           ),
           width: 48,
@@ -103,12 +104,12 @@ class AppCupertinoTabbar extends StatelessWidget {
             height: 2,
             width: 24,
             margin: const EdgeInsets.only(bottom: 4),
-            color: isSelected ? Colors.orange : Colors.transparent,
+            color: isSelected ? AppColors.primaryColor : Colors.transparent,
           ),
           EZResources.image(
             ImageParams(
               name: icon,
-              color: isSelected ? Colors.orange : Colors.grey,
+              color: isSelected ? AppColors.primaryColor : Colors.grey,
               size: const ImageSize.square(22),
             ),
           ),
@@ -121,12 +122,12 @@ class AppCupertinoTabbar extends StatelessWidget {
             height: 2,
             width: 24,
             margin: const EdgeInsets.only(bottom: 4),
-            color: Colors.orange,
+            color: AppColors.primaryColor,
           ),
           EZResources.image(
             ImageParams(
               name: activeIcon,
-              color: Colors.orange,
+              color: AppColors.primaryColor,
               size: const ImageSize.square(24),
             ),
           ),

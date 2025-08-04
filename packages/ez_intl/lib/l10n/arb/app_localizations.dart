@@ -547,6 +547,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hello'**
   String get hello;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @welcomeBack.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome back!'**
+  String get welcomeBack;
+
+  /// No description provided for @loginToContinue.
+  ///
+  /// In en, this message translates to:
+  /// **'Login to continue'**
+  String get loginToContinue;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password?'**
+  String get forgotPassword;
+
+  /// No description provided for @onboarding_1Title.
+  ///
+  /// In en, this message translates to:
+  /// **'Quản lý chi tiêu dễ dàng'**
+  String get onboarding_1Title;
+
+  /// No description provided for @onboarding_1Description.
+  ///
+  /// In en, this message translates to:
+  /// **'Ghi chép lại mọi khoản thu chi hàng ngày để có cái nhìn tổng quan về tài chính của bạn.'**
+  String get onboarding_1Description;
 }
 
 class _AppLocalizationsDelegate

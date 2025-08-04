@@ -379,4 +379,34 @@
     "type": "text",
     "placeholders": {}
   },
+  "Skip": "Bỏ qua",
+  "@Skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcomeBack": "Chào mừng trở lại!",
+  "@welcomeBack": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loginToContinue": "Đăng nhập để tiếp tục",
+  "@loginToContinue": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "forgotPassword": "Quên mật khẩu?",
+  "@forgotPassword": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboarding_1Title": "Quản lý chi tiêu dễ dàng",
+  "@onboarding_1Title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "onboarding_1Description": "Ghi chép lại mọi khoản thu chi hàng ngày để có cái nhìn tổng quan về tài chính của bạn.",
+  "@onboarding_1Description": {
+    "type": "text",
+    "placeholders": {}
+  },
 }

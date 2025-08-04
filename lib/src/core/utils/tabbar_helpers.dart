@@ -2,9 +2,7 @@
 import 'package:flutter/cupertino.dart';
 
 // Project imports:
-import '../../injector/injector.dart';
 import '../app_strings.dart';
-import '../routes/app_router.dart';
 
 GlobalKey? tabBarGlobalKey = GlobalKey(debugLabel: AppStrings.tabBarGlobalKey);
 
