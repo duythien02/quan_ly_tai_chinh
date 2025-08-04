@@ -6,6 +6,15 @@ class Routes {
   static const String profile = '/profile';
   static const String initAccount = '/initAccount';
   static const String tabbar = '/tabbar';
+  static const String onboarding = '/onboarding';
+  static const String onboardingOne = '/onboardingOne';
+  static const String onboardingTwo = '/onboardingTwo';
+  static const String onboardingThree = '/onboardingThree';
+  static const List<String> onboardingPages = [
+    onboardingOne,
+    onboardingTwo,
+    onboardingThree,
+  ];
   static const List<String> tabBarPages = [
     home,
     createTransaction,

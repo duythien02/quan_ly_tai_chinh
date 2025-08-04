@@ -5,7 +5,6 @@ import '../injector/injector.dart';
 import 'logger/logger.dart';
 import 'network/ez_network.dart';
 import 'network/interceptors/auth_interceptor.dart';
-import 'network/interceptors/header_interceptor.dart';
 import 'utils/api_helper.dart';
 
 class AppCore {

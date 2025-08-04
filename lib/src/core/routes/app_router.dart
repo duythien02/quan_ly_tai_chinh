@@ -11,9 +11,13 @@ import '../../presentation/auth/auth_page.dart';
 import '../../presentation/auth/init_account_page.dart';
 import '../../presentation/home_page/home_page.dart';
 import '../../presentation/landing_page/landing_page.dart';
+import '../../presentation/onboarding/onboarding_page.dart';
+import '../../presentation/onboarding/onboarding_screen_one.dart';
+import '../../presentation/onboarding/onboarding_screen_three.dart';
+import '../../presentation/onboarding/onboarding_screen_two.dart';
 import '../../presentation/profile/profile_page.dart';
 import '../../presentation/tabbar/view/tabbar.dart';
-import '../../presentation/transaction/create_transaction_page.dart';
+import '../../presentation/create_transaction/create_transaction_page.dart';
 import '../widgets/unknown_route_page.dart';
 import 'routes.dart';
 
@@ -27,7 +31,6 @@ part 'app_router.gr.dart';
     AutoRoute<void>(
       page: LandingPage,
       path: Routes.landing,
-      initial: true,
     ),
     AutoRoute<void>(
       page: AuthPage,
@@ -56,6 +59,23 @@ part 'app_router.gr.dart';
     AutoRoute<void>(
       path: Routes.unknown,
       page: UnknownRoutePage,
+    ),
+    AutoRoute<void>(
+      path: Routes.onboarding,
+      page: OnboardingPage,
+      initial: true,
+    ),
+    AutoRoute<void>(
+      path: Routes.onboardingOne,
+      page: OnboardingScreenOne,
+    ),
+    AutoRoute<void>(
+      path: Routes.onboardingTwo,
+      page: OnboardingScreenTwo,
+    ),
+    AutoRoute<void>(
+      path: Routes.onboardingThree,
+      page: OnboardingScreenThree,
     ),
     RedirectRoute(path: '*', redirectTo: Routes.unknown),
   ],

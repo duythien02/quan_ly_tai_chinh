@@ -24,9 +24,14 @@ class _$AppRouter extends RootStackRouter {
       );
     },
     AuthRoute.name: (routeData) {
+      final args =
+          routeData.argsAs<AuthRouteArgs>(orElse: () => const AuthRouteArgs());
       return CupertinoPageX<void>(
         routeData: routeData,
-        child: const AuthPage(),
+        child: AuthPage(
+          key: args.key,
+          showLoginPageFirst: args.showLoginPageFirst,
+        ),
       );
     },
     InitAccountRoute.name: (routeData) {
@@ -70,6 +75,30 @@ class _$AppRouter extends RootStackRouter {
         ),
       );
     },
+    OnboardingRoute.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const OnboardingPage(),
+      );
+    },
+    OnboardingRouteOne.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const OnboardingScreenOne(),
+      );
+    },
+    OnboardingRouteTwo.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const OnboardingScreenTwo(),
+      );
+    },
+    OnboardingRouteThree.name: (routeData) {
+      return CupertinoPageX<void>(
+        routeData: routeData,
+        child: const OnboardingScreenThree(),
+      );
+    },
   };
 
   @override
@@ -107,6 +136,22 @@ class _$AppRouter extends RootStackRouter {
           path: '/unknown',
         ),
         RouteConfig(
+          OnboardingRoute.name,
+          path: '/onboarding',
+        ),
+        RouteConfig(
+          OnboardingRouteOne.name,
+          path: '/onboardingOne',
+        ),
+        RouteConfig(
+          OnboardingRouteTwo.name,
+          path: '/onboardingTwo',
+        ),
+        RouteConfig(
+          OnboardingRouteThree.name,
+          path: '/onboardingThree',
+        ),
+        RouteConfig(
           '*#redirect',
           path: '*',
           redirectTo: '/unknown',
@@ -129,14 +174,36 @@ class LandingRoute extends PageRouteInfo<void> {
 
 /// generated route for
 /// [AuthPage]
-class AuthRoute extends PageRouteInfo<void> {
-  const AuthRoute()
-      : super(
+class AuthRoute extends PageRouteInfo<AuthRouteArgs> {
+  AuthRoute({
+    Key? key,
+    bool showLoginPageFirst = true,
+  }) : super(
           AuthRoute.name,
           path: '/auth',
+          args: AuthRouteArgs(
+            key: key,
+            showLoginPageFirst: showLoginPageFirst,
+          ),
         );
 
   static const String name = 'AuthRoute';
+}
+
+class AuthRouteArgs {
+  const AuthRouteArgs({
+    this.key,
+    this.showLoginPageFirst = true,
+  });
+
+  final Key? key;
+
+  final bool showLoginPageFirst;
+
+  @override
+  String toString() {
+    return 'AuthRouteArgs{key: $key, showLoginPageFirst: $showLoginPageFirst}';
+  }
 }
 
 /// generated route for
@@ -231,4 +298,52 @@ class UnknownRouteRouteArgs {
   String toString() {
     return 'UnknownRouteRouteArgs{key: $key, route: $route}';
   }
+}
+
+/// generated route for
+/// [OnboardingPage]
+class OnboardingRoute extends PageRouteInfo<void> {
+  const OnboardingRoute()
+      : super(
+          OnboardingRoute.name,
+          path: '/onboarding',
+        );
+
+  static const String name = 'OnboardingRoute';
+}
+
+/// generated route for
+/// [OnboardingScreenOne]
+class OnboardingRouteOne extends PageRouteInfo<void> {
+  const OnboardingRouteOne()
+      : super(
+          OnboardingRouteOne.name,
+          path: '/onboardingOne',
+        );
+
+  static const String name = 'OnboardingRouteOne';
+}
+
+/// generated route for
+/// [OnboardingScreenTwo]
+class OnboardingRouteTwo extends PageRouteInfo<void> {
+  const OnboardingRouteTwo()
+      : super(
+          OnboardingRouteTwo.name,
+          path: '/onboardingTwo',
+        );
+
+  static const String name = 'OnboardingRouteTwo';
+}
+
+/// generated route for
+/// [OnboardingScreenThree]
+class OnboardingRouteThree extends PageRouteInfo<void> {
+  const OnboardingRouteThree()
+      : super(
+          OnboardingRouteThree.name,
+          path: '/onboardingThree',
+        );
+
+  static const String name = 'OnboardingRouteThree';
 }

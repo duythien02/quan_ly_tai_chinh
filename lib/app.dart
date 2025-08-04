@@ -74,7 +74,7 @@ class _MainState extends State<Main> {
           BlocListener<TokenAuthenticationBloc, TokenAuthenticationState>(
             listener: (final context, final state) async {
               if (state is TokenAuthenticationUnAuthenticated) {
-                getIt<AppRouter>().replaceAll([const AuthRoute()]);
+                getIt<AppRouter>().replaceAll([const OnboardingRoute()]);
               }
               if (state is TokenAuthenticationAuthenticated) {
                 final hasAccount =

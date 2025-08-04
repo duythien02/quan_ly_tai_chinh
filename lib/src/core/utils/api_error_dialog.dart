@@ -9,7 +9,6 @@ import 'package:ez_intl/ez_intl.dart';
 // Project imports:
 import '../params/api_error_params.dart';
 import '../params/singleton_dialog_params.dart';
-import '../bloc/ez_bloc.dart';
 import '../error/api_error.dart';
 import '../error/error_codes.dart';
 import 'single_dialog.dart';
@@ -39,8 +38,6 @@ class ApiErrorDialog {
     switch (error?.code) {
       case '${ErrorCodes.tokenExpired}':
         {
-          //TODO
-          // context.read<AuthenticationBloc>().add(AuthenticationLoggedOut());
           break;
         }
       default:
